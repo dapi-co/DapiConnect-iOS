@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
     s.homepage          = 'https://dapi.co/'
     s.author            = { 'Dapi' => 'hello@dapi.co' }
     s.license           = { :type => 'Commercial', :file => 'LICENSE.md' }
-    s.platform          = "ios": '10.3'
+    s.platform          = "ios", '10.3'
     s.source		= { :git => 'https://github.com/dapi-co/DapiConnect-iOS.git', :tag => s.version.to_s }
     s.vendored_frameworks = 'DapiConnect.framework'
     s.source_files 	= 'DapiConnect.framework/Headers/*.{h}'
