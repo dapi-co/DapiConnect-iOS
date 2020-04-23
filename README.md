@@ -34,7 +34,7 @@ Currently, the SDK is only available through [CocoaPods](https://cocoapods.org/#
 ## How it Works
 
 DapiConnect SDK communicates with API endpoints to make network requests. Requests do NOT go to Dapi servers directly. Instead, requests first go to your server and then to Dapi servers. See the example gif below:
-> *(don't worry, we also have an [SDK for your server](https://github.com/dapi-co/sdk-server))*
+> *(don't worry, we also have an SDK for your server)*
 
 ![dfd](https://github.com/dapi-co/DapiConnect-iOS/raw/master/DapiConnectGIF.gif)
 
