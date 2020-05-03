@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DPCBeneficiaryInfo.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -16,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)connectDidSuccessfullyConnectToBankWithId:(NSString *)bankId connectionToken:(NSString *)token;
 - (void)connectDidFailConnectingToBankWithId:(NSString *)bankId;
+- (nullable DPCBeneficiaryInfo *)connectBeneficiaryInfoForBankWithId:(NSString *)bankId;
 
 @optional
 - (void)connectDidProceedSuccessfulConnection;

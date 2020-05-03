@@ -18,9 +18,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy, nullable) NSString *name;
 @property (nonatomic, copy, nullable) NSString *bankName;
 @property (nonatomic, copy, nullable) NSString *swiftCode;
+@property (nonatomic, copy, nullable) NSString *sendingSwiftCode;
 @property (nonatomic, copy, nullable) NSString *iban;
 @property (nonatomic, copy, nullable) NSString *phoneNumber;
 @property (nonatomic, copy, nullable) NSString *country;
+@property (nonatomic, copy, nullable) NSString *sendingCountry;
 @property (nonatomic, copy, nullable) NSString *branchAddress;
 @property (nonatomic, copy, nullable) NSString *branchName;
 

@@ -33,11 +33,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 /*!
  @brief Creates a beneficiary info representation to easily pass it to create beneficiary.
- @discussion Note that the returned object is still missing 4 important parameters:
+ @discussion Note that the returned object is still missing more important parameters:
  
  * accountNumber and/or iban.
  * name.
  * phoneNumber.
+ * sendingSwiftCode
+ * sendingCountryCode
  
  @return Beneficiary info object prefilled with most of the required params
 */
