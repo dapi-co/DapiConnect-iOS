@@ -31,6 +31,12 @@ extern DPCEndPoint const DPCEndPointCreateBeneficiary;
 extern DPCEndPoint const DPCEndPointCreateTransfer;
 extern DPCEndPoint const DPCEndPointResumeJob;
 
+typedef NSString *DPCColorScheme NS_TYPED_EXTENSIBLE_ENUM;
+
+extern DPCColorScheme const DPCColorSchemeGeneral;
+extern DPCColorScheme const DPCColorSchemeBW;
+extern DPCColorScheme const DPCColorSchemeNeon;
+
 @interface DPCConfigurations : NSObject
 
 /*!
@@ -51,6 +57,8 @@ extern DPCEndPoint const DPCEndPointResumeJob;
  @brief Let's you set a custom end point. This only needed when not using the server-side SDK.
 */
 @property (nonatomic, copy) NSDictionary<DPCEndPoint, NSString *> *endpoints;
+
+@property (nonatomic, nonatomic, copy) DPCColorScheme colorScheme;
 
 @end
 
