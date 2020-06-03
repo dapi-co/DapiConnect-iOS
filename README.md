@@ -89,12 +89,12 @@ Responsible for showing list of banks, credentials input, authorization and auth
         super.viewDidLoad()
         
         connect.connectDelegate = self
-        connect.presentFlow(self)
+        connect.present()
         
     }
 
 	// MARK: - Connect delegate methods.
-	func connectDidSuccessfullyConnectToBank(withId bankId: String, connectionToken token: String) {
+    func connectDidSuccessfullyConnectToBank(withId bankId: String, accessID: String) {
         print("✅")
     }
     
@@ -104,30 +104,23 @@ Responsible for showing list of banks, credentials input, authorization and auth
 ```
 
 ### DPPayment
-You can call data and payment endpoints on a `DPPayment` object. Please note that `DPCPayment` only accepts a valid connection token as an initialization parameter.
+You can call data and payment endpoints on a `DPPayment` object. Please note that `DPCPayment` only accepts a valid accessID as an initialization parameter.
 
- This class has 2 required delegate methods:
-
-1. To present the multi-factor authentication screen: ask the delegate for a `UIViewController`.
-2. To display a numpad screen that shows value of a user's submitted transfer: call `presentFlowOver:`.
+ This class has a required delegate method which will be called after the user submit an amount to send
 
 ```swift
-    let payment = DPCPayment(connectionToken: "1234")!
+    let payment = DPCPayment(accessID: "1234")!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         payment.delegate = self
-        payment.presentFlowOver(self)
+        payment.present()
         
     }
-    
-    func paymentNeedsMFAPresentedViewController(_ payment: DPCPayment) -> UIViewController {
-        return self.presentedViewController ?? self
-    }
-    
-    func paymentDidSubmitAmount(_ amount: Double, usingConnectionToken connectionToken: String) {
-        
+
+    func paymentDidSubmitAmount(_ amount: Double, usingAccessID accessID: String) {
+
     }
 ```
 
@@ -145,7 +138,7 @@ It has a required delegate method that asks for beneficiary info needed to make 
         autoflow.connectDelegate = self
         autoflow.paymentDelegate = self
         autoflow.autoflowDelegate = self
-        autoflow.start()
+        autoflow.present()
     }
     
 	func autoFlow(_ autoFlow: DPCAutoFlow, beneficiaryInfoForBankID bankID: String, supportsCreateBeneficiary: Bool) -> DPCBeneficiaryInfo {
