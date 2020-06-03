@@ -22,19 +22,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol DPCPaymentDelegate <NSObject>
 
-- (UIViewController *)paymentNeedsMFAPresentedViewController:(DPCPayment *)payment;
-- (void)paymentDidSubmitAmount:(double)amount usingConnectionToken:(NSString *)connectionToken;
+- (void)paymentDidSubmitAmount:(double)amount usingAccessID:(NSString *)accessID;
 
 @end
 
 @interface DPCPayment : NSObject
 
-@property (nonatomic, copy, readonly) NSString *connectionToken;
+@property (nonatomic, copy, readonly) NSString *accessID;
 @property (nonatomic, weak) id<DPCPaymentDelegate> delegate;
 
-- (nullable instancetype)initWithConnectionToken:(NSString *)connectionToken;
+- (nullable instancetype)initWithAccessID:(NSString *)accessID;
 
-- (void)presentPaymentFlowOver:(UIViewController *)parentViewController;
+- (void)present;
 
 - (void)getIdentity:(void (^ __nullable)(DPCIdentity *__nullable identity, NSError *__nullable error))completion;
 - (void)getAccounts:(void (^ __nullable)(NSArray<DPCAccount *> *__nullable accounts, NSError *__nullable error))completion;

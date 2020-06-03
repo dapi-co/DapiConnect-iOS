@@ -60,6 +60,10 @@ extern DPCColorScheme const DPCColorSchemeNeon;
 
 @property (nonatomic, nonatomic, copy) DPCColorScheme colorScheme;
 
+@property (nonatomic, copy) NSArray<NSString *> *countries;
+
+@property (nonatomic, assign) BOOL includeExperimentalBanks;
+
 @end
 
 NS_ASSUME_NONNULL_END

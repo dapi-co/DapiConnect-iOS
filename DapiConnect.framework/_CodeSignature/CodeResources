@@ -6,43 +6,43 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		8FHpOXsC2Y5Fsqp5juetX3j3uwg=
+		5sK+cIJsIqgZ3aHkJshMcGGG0rY=
 		</data>
 		<key>DapiConnect.momd/DapiConnect.mom</key>
 		<data>
-		WcCnFNYOoEtRtB5p7WrEMqR1Qvs=
+		xe3p3t4zIwIiHPxRRhDCtwAbvoY=
 		</data>
 		<key>DapiConnect.momd/VersionInfo.plist</key>
 		<data>
-		1xpk6m4Uw5n5XhDSLEdhzv9PpmI=
+		6AmNe7pbqzR+izHepIlwLPGvu4s=
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
-		Jk9oBdtbVXcEPFIFcCuiYT2+tV8=
+		PFWil34XkB1yjRLqKAVeBsWUb2s=
 		</data>
 		<key>Frameworks/libswiftCoreFoundation.dylib</key>
 		<data>
-		GAGIj44pPjOVZ3jCJv4kjh9xgbE=
+		ENqI5C9tDFIXYiGBdIqj6ThJnBk=
 		</data>
 		<key>Frameworks/libswiftCoreGraphics.dylib</key>
 		<data>
-		RCwEPzqNNqeapoZM2Q9dLWV+dew=
+		6w0P5u5KKTNEg0RW8x4YsJuRHb0=
 		</data>
 		<key>Frameworks/libswiftDarwin.dylib</key>
 		<data>
-		5LeOGMrEcIcnStRPdGJYsNWWZcI=
+		ZVu73F77SKWdhR/oX62mL3LmW9k=
 		</data>
 		<key>Frameworks/libswiftDispatch.dylib</key>
 		<data>
-		CJz3ZfCQBuY2WmT1auQv5/YRVIc=
+		NnVbcFErm+BiSCiySTrCT4Ioey0=
 		</data>
 		<key>Frameworks/libswiftFoundation.dylib</key>
 		<data>
-		bqdS/jXgUQ1Ae+R3x/dlaTL8TVM=
+		COb2/cjdnHrayBthF4Z0XxiTJUA=
 		</data>
 		<key>Frameworks/libswiftObjectiveC.dylib</key>
 		<data>
-		0LAOsfJF2/5R7uN88yaTq6X4D9I=
+		vVQlHFZ2HznZLD8g1MZdkSpMBiM=
 		</data>
 		<key>Headers/DPCAccount.h</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Headers/DPCApp.h</key>
 		<data>
-		jWAGFNqZKaEaWSSaIZkQjfAzrBE=
+		yt29FpxPlF62kKgYXyVq5yHLB6s=
 		</data>
 		<key>Headers/DPCAutoFlow.h</key>
 		<data>
-		UthI41+ER4Y9uk6g2uYjP9SB/eI=
+		T169ZiaReN+qFpl93bXNQb+lfTI=
 		</data>
 		<key>Headers/DPCBalance.h</key>
 		<data>
@@ -74,11 +74,11 @@
 		</data>
 		<key>Headers/DPCConfigurations.h</key>
 		<data>
-		2RBiRkPWx/y6g8Xz1ePnub1eKKg=
+		YHoQJIYO+JHqPifzIExM7uLgQgc=
 		</data>
 		<key>Headers/DPCConnect.h</key>
 		<data>
-		P7OXYyaowDMWREblLi+S9w1LC5Y=
+		KJC2MhJa2dr0/nu3mE2SrYHF9s0=
 		</data>
 		<key>Headers/DPCIdentification.h</key>
 		<data>
@@ -106,7 +106,7 @@
 		</data>
 		<key>Headers/DPCPayment.h</key>
 		<data>
-		QRPbaCazDkWwxG5z49UPRybIeoc=
+		VlnUETB4atg5D3dd7beVCbYOZNE=
 		</data>
 		<key>Headers/DPCResult.h</key>
 		<data>
@@ -114,7 +114,7 @@
 		</data>
 		<key>Headers/DPCTransaction.h</key>
 		<data>
-		PMFZP3bMW2H4L/BOxEhJLNKJAvo=
+		7XNbrvSRlkdL8phR1+UQ48cokL0=
 		</data>
 		<key>Headers/DPCTransferBound.h</key>
 		<data>
@@ -130,7 +130,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		MwEj4q44W75rm86RWUBznIJr0oo=
+		cugz4AM00UAH7l/BCX0jByGDlag=
 		</data>
 		<key>Modules/DapiConnect.swiftmodule/arm.swiftdoc</key>
 		<data>
@@ -138,7 +138,7 @@
 		</data>
 		<key>Modules/DapiConnect.swiftmodule/arm.swiftmodule</key>
 		<data>
-		kwfZXPb5444hDDRnv7+KmVlntAk=
+		gMJCnuW1ZSoyrrPgHa6r5RK+DkM=
 		</data>
 		<key>Modules/DapiConnect.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -146,7 +146,7 @@
 		</data>
 		<key>Modules/DapiConnect.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		gDUCGJY1nVtfxyW/6n/ViCuQ6hQ=
+		k6q41oZQEJoK/4f+wgiPtTLtyxg=
 		</data>
 		<key>Modules/DapiConnect.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -154,7 +154,7 @@
 		</data>
 		<key>Modules/DapiConnect.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		gDUCGJY1nVtfxyW/6n/ViCuQ6hQ=
+		k6q41oZQEJoK/4f+wgiPtTLtyxg=
 		</data>
 		<key>Modules/DapiConnect.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<data>
@@ -162,7 +162,7 @@
 		</data>
 		<key>Modules/DapiConnect.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<data>
-		kwfZXPb5444hDDRnv7+KmVlntAk=
+		gMJCnuW1ZSoyrrPgHa6r5RK+DkM=
 		</data>
 		<key>Modules/DapiConnect.swiftmodule/armv7.swiftdoc</key>
 		<data>
@@ -170,7 +170,7 @@
 		</data>
 		<key>Modules/DapiConnect.swiftmodule/armv7.swiftmodule</key>
 		<data>
-		kwfZXPb5444hDDRnv7+KmVlntAk=
+		gMJCnuW1ZSoyrrPgHa6r5RK+DkM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -240,6 +240,10 @@
 		<data>
 		O2AWaE2U4eFA8xXEognsoW4ROSM=
 		</data>
+		<key>loadingAnimation.gif</key>
+		<data>
+		U5EzPXHlHwMxF8GkawOpoNqOweA=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -247,110 +251,110 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8FHpOXsC2Y5Fsqp5juetX3j3uwg=
+			5sK+cIJsIqgZ3aHkJshMcGGG0rY=
 			</data>
 			<key>hash2</key>
 			<data>
-			cv+blzs8vBsY+NiIjnDNMFuRQfZhlNqj0ELkpyEOEwA=
+			d8hIk6KYSex7MrXEq8I5H8C319jn6v1NMrC4uccr4zA=
 			</data>
 		</dict>
 		<key>DapiConnect.momd/DapiConnect.mom</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WcCnFNYOoEtRtB5p7WrEMqR1Qvs=
+			xe3p3t4zIwIiHPxRRhDCtwAbvoY=
 			</data>
 			<key>hash2</key>
 			<data>
-			XQ8U22v6EKlUH3RdAYqFK9fTQbASlbIeseCfH22GGtM=
+			HPaBCE02VGYlufRmzBXnO7G9nc0Mr2ZZGcY96QHLpNk=
 			</data>
 		</dict>
 		<key>DapiConnect.momd/VersionInfo.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1xpk6m4Uw5n5XhDSLEdhzv9PpmI=
+			6AmNe7pbqzR+izHepIlwLPGvu4s=
 			</data>
 			<key>hash2</key>
 			<data>
-			6VWaqffwa/dSITiGqiNdajhbDszi2HiU5avm+qaBdbY=
+			IepJ5mPnJ2fi92jcuJk8GGjetc/ujHvtvVy5Lb4aacc=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Jk9oBdtbVXcEPFIFcCuiYT2+tV8=
+			PFWil34XkB1yjRLqKAVeBsWUb2s=
 			</data>
 			<key>hash2</key>
 			<data>
-			vwE5ma4fVlv4s7SDzsYO75SsswHhHtKKbQJNklWclZ8=
+			tLQukDIDs2lQDTdRm320QLAzZ55n1aN4p5CnlGZJ0XY=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCoreFoundation.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GAGIj44pPjOVZ3jCJv4kjh9xgbE=
+			ENqI5C9tDFIXYiGBdIqj6ThJnBk=
 			</data>
 			<key>hash2</key>
 			<data>
-			SK37Tg34aZ9el4F+7nBO7V8CULr1Ib08uhnFVDm5rY8=
+			DveEO3isnBGiUC5AgUCz0KJWCxGhg6XVPss6PvHnY8Y=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCoreGraphics.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RCwEPzqNNqeapoZM2Q9dLWV+dew=
+			6w0P5u5KKTNEg0RW8x4YsJuRHb0=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ueb+AeYfi3hLDBW6j4idUW8nWGTHGDIgbozg00pVA1k=
+			Zw7aGmWRRnZ6KM/9LacQLxlOGuU+pphKgHi0FJO6uhw=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftDarwin.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5LeOGMrEcIcnStRPdGJYsNWWZcI=
+			ZVu73F77SKWdhR/oX62mL3LmW9k=
 			</data>
 			<key>hash2</key>
 			<data>
-			fVrusINfcMDBX/pkUFFqNcy4r4DbXYhqqjFDpRN+xW4=
+			tGKLVWOAM4QGzxe8sPlj9cGrk6Boa5+WFhRuVduMzHQ=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftDispatch.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CJz3ZfCQBuY2WmT1auQv5/YRVIc=
+			NnVbcFErm+BiSCiySTrCT4Ioey0=
 			</data>
 			<key>hash2</key>
 			<data>
-			Pm/RLcsD4IkjQt6OzrsRlX1lwjcIDwaBDhxoP524SMM=
+			J9giK6MoTIn8KVDe/CKS9TSfQPLb5P09j3ATA23d7mw=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftFoundation.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bqdS/jXgUQ1Ae+R3x/dlaTL8TVM=
+			COb2/cjdnHrayBthF4Z0XxiTJUA=
 			</data>
 			<key>hash2</key>
 			<data>
-			B6SqelmXWLNgYk24eD0Cd1/tv6HuKMd16Hn70o1AOvU=
+			FSH2q+HAGlgm7VCHKJfZPvG52P+5JbVlh4qoHrl82OY=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftObjectiveC.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0LAOsfJF2/5R7uN88yaTq6X4D9I=
+			vVQlHFZ2HznZLD8g1MZdkSpMBiM=
 			</data>
 			<key>hash2</key>
 			<data>
-			Z3aujK9YRJsi+oFI11gkQpkWlPfI0rrB6MyepDQzMk0=
+			h6zeTFuXLo9vp1AVIVgDISf7vSJYx/JD72qYvJFh9Fs=
 			</data>
 		</dict>
 		<key>Headers/DPCAccount.h</key>
@@ -379,22 +383,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jWAGFNqZKaEaWSSaIZkQjfAzrBE=
+			yt29FpxPlF62kKgYXyVq5yHLB6s=
 			</data>
 			<key>hash2</key>
 			<data>
-			eNe18bh+jjvyyI3tjNxlTe9DMJ5/6z/Zy8gDBuGCAWo=
+			PNrtuaXNU0uuZMTWtLjwz8Ihu5fMv4eH5ElGycQCQpA=
 			</data>
 		</dict>
 		<key>Headers/DPCAutoFlow.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UthI41+ER4Y9uk6g2uYjP9SB/eI=
+			T169ZiaReN+qFpl93bXNQb+lfTI=
 			</data>
 			<key>hash2</key>
 			<data>
-			o+zeA3wCbeIr30xT8i6cnWbKmaeFV55Eeo8DEr80KUs=
+			f8tA73w6e4LA7VfDT4O+5IloriYTXITvWWBooOtLQAE=
 			</data>
 		</dict>
 		<key>Headers/DPCBalance.h</key>
@@ -434,22 +438,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2RBiRkPWx/y6g8Xz1ePnub1eKKg=
+			YHoQJIYO+JHqPifzIExM7uLgQgc=
 			</data>
 			<key>hash2</key>
 			<data>
-			3Z9PoCBR6pJcYIZICisv+vhVPfFjhEtEmGzEOV1Eddo=
+			wzq7mvnY3u3ExNEwy9Nlm7FQWwIFgeN84ZV9hen3eS0=
 			</data>
 		</dict>
 		<key>Headers/DPCConnect.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			P7OXYyaowDMWREblLi+S9w1LC5Y=
+			KJC2MhJa2dr0/nu3mE2SrYHF9s0=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZqcDqHvEksDPWz7U8emsAP4yqRkTFBlY5i7vSmyutCE=
+			B4njMDOs0u/VaY1DvQvzZ2OeOXMhaKLLMSQX/o2Kq94=
 			</data>
 		</dict>
 		<key>Headers/DPCIdentification.h</key>
@@ -522,11 +526,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QRPbaCazDkWwxG5z49UPRybIeoc=
+			VlnUETB4atg5D3dd7beVCbYOZNE=
 			</data>
 			<key>hash2</key>
 			<data>
-			jM4Q3Kj4qF4QPn1slVkDHrB5dFRScZpr4qY8yi3oBaM=
+			JMJ/YL2Fnc5BBHl3rcluVWAdZyJv7rRYUFxQpjKg32M=
 			</data>
 		</dict>
 		<key>Headers/DPCResult.h</key>
@@ -544,11 +548,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PMFZP3bMW2H4L/BOxEhJLNKJAvo=
+			7XNbrvSRlkdL8phR1+UQ48cokL0=
 			</data>
 			<key>hash2</key>
 			<data>
-			jOl6ZvqiAQVTd/nBw8Ezdq43yXX2JQj7XFtBHvG7QRI=
+			2YN8ioIFOeWj8w0sPy31viiRhs0DSxLRZWoH0dITWP8=
 			</data>
 		</dict>
 		<key>Headers/DPCTransferBound.h</key>
@@ -599,11 +603,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kwfZXPb5444hDDRnv7+KmVlntAk=
+			gMJCnuW1ZSoyrrPgHa6r5RK+DkM=
 			</data>
 			<key>hash2</key>
 			<data>
-			9tFBNNpmd31c7nQod2i4Z2LCY0Ffp10XY20nFk45khk=
+			rDMNMiJYnlx6XhbfICpMABLJ0ixAUGl3Fww2um1iehI=
 			</data>
 		</dict>
 		<key>Modules/DapiConnect.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -621,11 +625,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gDUCGJY1nVtfxyW/6n/ViCuQ6hQ=
+			k6q41oZQEJoK/4f+wgiPtTLtyxg=
 			</data>
 			<key>hash2</key>
 			<data>
-			m8XFBeGPttzJk7d8AB5bQIIimatcxe4XtAls47c+V+E=
+			PQmFSqKR9noqk1mK9cipzeD5EUySdXUvnHAp8EtEXZA=
 			</data>
 		</dict>
 		<key>Modules/DapiConnect.swiftmodule/arm64.swiftdoc</key>
@@ -643,11 +647,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gDUCGJY1nVtfxyW/6n/ViCuQ6hQ=
+			k6q41oZQEJoK/4f+wgiPtTLtyxg=
 			</data>
 			<key>hash2</key>
 			<data>
-			m8XFBeGPttzJk7d8AB5bQIIimatcxe4XtAls47c+V+E=
+			PQmFSqKR9noqk1mK9cipzeD5EUySdXUvnHAp8EtEXZA=
 			</data>
 		</dict>
 		<key>Modules/DapiConnect.swiftmodule/armv7-apple-ios.swiftdoc</key>
@@ -665,11 +669,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kwfZXPb5444hDDRnv7+KmVlntAk=
+			gMJCnuW1ZSoyrrPgHa6r5RK+DkM=
 			</data>
 			<key>hash2</key>
 			<data>
-			9tFBNNpmd31c7nQod2i4Z2LCY0Ffp10XY20nFk45khk=
+			rDMNMiJYnlx6XhbfICpMABLJ0ixAUGl3Fww2um1iehI=
 			</data>
 		</dict>
 		<key>Modules/DapiConnect.swiftmodule/armv7.swiftdoc</key>
@@ -687,11 +691,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kwfZXPb5444hDDRnv7+KmVlntAk=
+			gMJCnuW1ZSoyrrPgHa6r5RK+DkM=
 			</data>
 			<key>hash2</key>
 			<data>
-			9tFBNNpmd31c7nQod2i4Z2LCY0Ffp10XY20nFk45khk=
+			rDMNMiJYnlx6XhbfICpMABLJ0ixAUGl3Fww2um1iehI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -879,6 +883,17 @@
 			<key>hash2</key>
 			<data>
 			sRN5iIvk4/4yGBUsvevstjhJnbm5z7c9devokxtYXrs=
+			</data>
+		</dict>
+		<key>loadingAnimation.gif</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			U5EzPXHlHwMxF8GkawOpoNqOweA=
+			</data>
+			<key>hash2</key>
+			<data>
+			FX2Cd8l3hHBMB8aHZWBVcgHRSWr3vfnygTtOlVODLok=
 			</data>
 		</dict>
 	</dict>

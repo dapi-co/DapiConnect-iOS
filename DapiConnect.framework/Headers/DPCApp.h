@@ -14,9 +14,9 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DPCApp : NSObject
 
 /*!
- @discussion Each connection to a bank account is associated with a connection token. You can retrieve all connection tokens using this property.
+ @discussion Each connection to a bank account is associated with an accessID. You can retrieve all `accessID`s using this property.
 */
-@property (nonatomic, readonly, class) NSArray<NSString *> *connectionTokens;
+@property (nonatomic, readonly, class) NSArray<NSString *> *accessIDs;
 
 -(instancetype) init __attribute__((unavailable("use shared property")));
 

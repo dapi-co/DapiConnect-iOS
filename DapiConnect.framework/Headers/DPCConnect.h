@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol DPCConnectDelegate <NSObject>
 
-- (void)connectDidSuccessfullyConnectToBankWithId:(NSString *)bankId connectionToken:(NSString *)token;
+- (void)connectDidSuccessfullyConnectToBankWithId:(NSString *)bankId accessID:(NSString *)accessID;
 - (void)connectDidFailConnectingToBankWithId:(NSString *)bankId;
 - (nullable DPCBeneficiaryInfo *)connectBeneficiaryInfoForBankWithId:(NSString *)bankId;
 
@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DPCConnect : NSObject
 
 @property (nonatomic, weak) id<DPCConnectDelegate> connectDelegate;
-- (void)presentConnectFlow:(UIViewController *)parentViewController;
+- (void)present;
 
 @end
 

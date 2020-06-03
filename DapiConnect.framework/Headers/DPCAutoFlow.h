@@ -27,7 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak) id<DPCConnectDelegate> connectDelegate;
 @property (nonatomic, weak) id<DPCPaymentDelegate> paymentDelegate;
 @property (nonatomic, weak) id<DPCAutoFlowDelegate> autoflowDelegate;
-- (void)startFlow;
+- (void)present;
 
 @end
 

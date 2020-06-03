@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) DPCPair *currency;
 @property (nonatomic, strong) NSDate *date;
 @property (nonatomic, copy) NSString *transactionDescription;
-@property (nonatomic, copy) NSString *details;
+@property (nullable, nonatomic, copy) NSString *details;
 @property (nonatomic, copy) NSString *type;
 
 - (instancetype)initWithDictionary:(NSDictionary<NSString *, id> *)dictionary;
