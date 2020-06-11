@@ -64,6 +64,16 @@ extern DPCColorScheme const DPCColorSchemeNeon;
 
 @property (nonatomic, assign) BOOL includeExperimentalBanks;
 
+@property (nonatomic, copy) NSDictionary<DPCEndPoint, NSArray<NSURLQueryItem *> *> *endPointExtraQueryItems;
+@property (nonatomic, copy) NSDictionary<DPCEndPoint, NSDictionary<NSString *, NSString *> *> *endPointExtraHeaderFields;
+
+/*!
+ @brief Let's you append extra json object to the root of the body.
+ 
+ @discussion The appended dictionary will be under the key "UserExtraBody" at the root JSON body. This will not work with all 'DPCEndPoint's since some of them are HTTP GET requests.
+*/
+@property (nonatomic, copy) NSDictionary<DPCEndPoint, NSDictionary<NSString *, id> *> *endPointExtraBody;
+
 @end
 
 NS_ASSUME_NONNULL_END
