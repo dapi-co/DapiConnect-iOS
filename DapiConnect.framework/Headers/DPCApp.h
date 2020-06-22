@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "DPCConfigurations.h"
+#import "DPCConnectionDetails.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -36,6 +37,14 @@ NS_ASSUME_NONNULL_BEGIN
  @param userID The currently logged in user.
 */
 + (void)setUserID:(NSString *)userID;
+
+/*!
+ @discussion Returns info associated with an accessID.
+ For instance, details will include bankID and name.
+ 
+ @param accessID you can retrieve all available accessIDs from `DPCApp.accessIDs`.
+*/
++ (DPCConnectionDetails *)connectionDetailsWithAccessID:(NSString *)accessID;
 
 @end
 
