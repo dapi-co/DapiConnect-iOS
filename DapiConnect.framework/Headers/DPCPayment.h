@@ -61,7 +61,6 @@ NS_ASSUME_NONNULL_BEGIN
 */
 - (void)makeTransferFromAccountID:(NSString *)accountID
                            amount:(NSNumber *)amount
-           toBeneficiaryAccountID:(NSString *)beneficiaryID
                              iban:(NSString *)iban
                              name:(NSString *)name
                        completion:(void (^ __nullable)(DPCResult *__nullable result, NSError *__nullable error))completion;
