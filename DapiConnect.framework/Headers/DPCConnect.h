@@ -29,6 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, weak) id<DPCConnectDelegate> connectDelegate;
 - (void)present;
+- (void)dismissWithCompletion:(void (^ __nullable)(void))completion;
 
 @end
 

@@ -28,6 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak) id<DPCPaymentDelegate> paymentDelegate;
 @property (nonatomic, weak) id<DPCAutoFlowDelegate> autoflowDelegate;
 - (void)present;
+- (void)dismissWithCompletion:(void (^ __nullable)(void))completion;
 
 @end
 
