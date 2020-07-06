@@ -65,6 +65,8 @@ NS_ASSUME_NONNULL_BEGIN
                              name:(NSString *)name
                        completion:(void (^ __nullable)(DPCResult *__nullable result, NSError *__nullable error))completion;
 
+- (void)delinkUserCompletion:(void (^ __nullable)(DPCResult *__nullable result, NSError *__nullable error))completion;
+
 @end
 
 NS_ASSUME_NONNULL_END

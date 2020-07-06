@@ -30,6 +30,7 @@ extern DPCEndPoint const DPCEndPointGetBeneficiaries;
 extern DPCEndPoint const DPCEndPointCreateBeneficiary;
 extern DPCEndPoint const DPCEndPointCreateTransfer;
 extern DPCEndPoint const DPCEndPointResumeJob;
+extern DPCEndPoint const DPCEndPointDelinkUser;
 
 typedef NSString *DPCColorScheme NS_TYPED_EXTENSIBLE_ENUM;
 

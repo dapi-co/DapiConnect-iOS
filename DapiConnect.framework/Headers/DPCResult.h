@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *jobID;
 @property (nonatomic, copy) NSString *status;
 @property (nonatomic, assign) BOOL success;
+@property (nonatomic, copy) NSString *message;
 
 - (instancetype)initWithDictionary:(NSDictionary<NSString *, id> *)dictionary;
 

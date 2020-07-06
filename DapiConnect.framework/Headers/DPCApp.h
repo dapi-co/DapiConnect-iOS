@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion Each connection to a bank account is associated with an accessID. You can retrieve all `accessID`s using this property.
 */
 @property (nonatomic, readonly, class) NSArray<NSString *> *accessIDs;
+@property (nonatomic, class, strong) DPCConfigurations *configurations;
 
 -(instancetype) init __attribute__((unavailable("use shared property")));
 
