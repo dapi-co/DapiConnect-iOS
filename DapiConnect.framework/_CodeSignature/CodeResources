@@ -408,7 +408,7 @@
 		</data>
 		<key>Headers/DPCAutoFlow.h</key>
 		<data>
-		MhECjo1DKjGOZSTzbHsdobz2D4s=
+		cPWaJdN6UTu8M2daDnt2YAKAi5c=
 		</data>
 		<key>Headers/DPCBalance.h</key>
 		<data>
@@ -432,7 +432,11 @@
 		</data>
 		<key>Headers/DPCConnectionDetails.h</key>
 		<data>
-		REAHA5faJhfAbxV7dQ4AzEvnzUI=
+		Sv3SGrE1+Vo44RzzEak0iHKqlr4=
+		</data>
+		<key>Headers/DPCConnectionSubaccountDetails.h</key>
+		<data>
+		gean/pdL2WI4206HG2Rnw2WIzW8=
 		</data>
 		<key>Headers/DPCIdentification.h</key>
 		<data>
@@ -484,7 +488,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		f4vW76mo2tWgj3U+nD1DsBEX8m0=
+		1Atx8j3FVqHuHUDGs6isWv6D0yk=
 		</data>
 		<key>Modules/DapiConnect.swiftmodule/arm.swiftdoc</key>
 		<data>
@@ -1217,11 +1221,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MhECjo1DKjGOZSTzbHsdobz2D4s=
+			cPWaJdN6UTu8M2daDnt2YAKAi5c=
 			</data>
 			<key>hash2</key>
 			<data>
-			uCS+HhMqB7aD3dbYwm3Lq1mO0PJMohI0p/BNwEhyFBI=
+			y6sNzarTY3xBWNlZLA/wtOEBBb2H2x/LAHWR5Ts6RDA=
 			</data>
 		</dict>
 		<key>Headers/DPCBalance.h</key>
@@ -1283,11 +1287,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			REAHA5faJhfAbxV7dQ4AzEvnzUI=
+			Sv3SGrE1+Vo44RzzEak0iHKqlr4=
 			</data>
 			<key>hash2</key>
 			<data>
-			8tsp9YR8yNTMntf1Qx+W6UFm96Bq1SUOzKwWRFtPS7Q=
+			Z68OJ7yEtTU9a/ym/r1T2zqo3JT8DMHEl/EPPvoeziM=
+			</data>
+		</dict>
+		<key>Headers/DPCConnectionSubaccountDetails.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gean/pdL2WI4206HG2Rnw2WIzW8=
+			</data>
+			<key>hash2</key>
+			<data>
+			Z4y3WCp9aboR4fqU5Drst83LmtisdwX/xbHwcekBdGI=
 			</data>
 		</dict>
 		<key>Headers/DPCIdentification.h</key>

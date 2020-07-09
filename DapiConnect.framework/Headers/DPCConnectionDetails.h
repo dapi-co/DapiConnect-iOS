@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DPCConnectionSubaccountDetails.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -17,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (assign) double beneficiaryCoolDownPeriod;
 @property (nullable, nonatomic, copy) NSString *countryName;
 @property (assign) BOOL isCreateBeneficiaryEndpointRequired;
+@property (nonatomic, copy) NSArray<DPCConnectionSubaccountDetails *> *subaccountsDetails;
 
 @end
 
