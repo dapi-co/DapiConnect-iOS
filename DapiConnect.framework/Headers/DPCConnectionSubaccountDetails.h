@@ -16,7 +16,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *accountNumber;
 @property (nonatomic, copy) NSString *currencyCode;
 @property (nonatomic, copy) NSString *type;
-@property (assign) double balance;
 
 @end
 
