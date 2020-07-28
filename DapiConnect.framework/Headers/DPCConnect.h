@@ -15,13 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol DPCConnectDelegate <NSObject>
 
-- (void)connectDidSuccessfullyConnectToBankWithId:(NSString *)bankId accessID:(NSString *)accessID;
-- (void)connectDidFailConnectingToBank:(NSString *)bankID withError:(NSString *)error;
-- (nullable DPCBeneficiaryInfo *)connectBeneficiaryInfoForBankWithId:(NSString *)bankId;
-
-@optional
-- (void)connectDidProceedSuccessfulConnection;
-- (void)connectDidRetryFailedConnection;
+- (void)connectDidSuccessfullyConnectToBankID:(NSString *)bankID accessID:(NSString *)accessID;
+- (void)connectDidFailConnectingToBankID:(NSString *)bankID withError:(NSString *)error;
+- (nullable DPCBeneficiaryInfo *)connectBeneficiaryInfoForBankWithID:(NSString *)bankID;
+- (void)connectDidProceedWithBankID:(NSString *)bankID accessID:(NSString *)accessID;
 
 @end
 

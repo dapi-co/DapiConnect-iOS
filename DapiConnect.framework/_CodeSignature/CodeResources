@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		zfFRXrOfwREhhkVRr+DWnae+/xc=
+		NmYn/fQb2yxz+TMWvZa130hd8vA=
 		</data>
 		<key>DapiConnect.momd/DapiConnect.mom</key>
 		<data>
@@ -428,7 +428,7 @@
 		</data>
 		<key>Headers/DPCConnect.h</key>
 		<data>
-		rGKk/gvTfdCgZoPlTj++YUcpvyI=
+		NTrsgCh8theFVXycMSSLtPKTf9w=
 		</data>
 		<key>Headers/DPCConnectionDetails.h</key>
 		<data>
@@ -478,61 +478,17 @@
 		<data>
 		MrPL5aVpKfr6XAfMTdjT18BDFSM=
 		</data>
-		<key>Headers/DapiConnect-Swift.h</key>
-		<data>
-		INg+mzC2mZqIkbNUVebne1b0jQo=
-		</data>
 		<key>Headers/DapiConnect.h</key>
 		<data>
 		f2FVArm0qCmJm99LrQcZAIF5oKs=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/QovmHqXyKL8OVMJVC2UpFPR74s=
-		</data>
-		<key>Modules/DapiConnect.swiftmodule/arm.swiftdoc</key>
-		<data>
-		JPeZ2f+0Aoa+l27XWxY/781RTaU=
-		</data>
-		<key>Modules/DapiConnect.swiftmodule/arm.swiftmodule</key>
-		<data>
-		DwQeDAc7rdOifFjK5+7tIl0Y2sk=
-		</data>
-		<key>Modules/DapiConnect.swiftmodule/arm64-apple-ios.swiftdoc</key>
-		<data>
-		H0TQFKA5bvcKCBHE+leLhVNBrOo=
-		</data>
-		<key>Modules/DapiConnect.swiftmodule/arm64-apple-ios.swiftmodule</key>
-		<data>
-		MxK7E00gVON5EkydQadUn8+GgUg=
-		</data>
-		<key>Modules/DapiConnect.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		H0TQFKA5bvcKCBHE+leLhVNBrOo=
-		</data>
-		<key>Modules/DapiConnect.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		MxK7E00gVON5EkydQadUn8+GgUg=
-		</data>
-		<key>Modules/DapiConnect.swiftmodule/armv7-apple-ios.swiftdoc</key>
-		<data>
-		JPeZ2f+0Aoa+l27XWxY/781RTaU=
-		</data>
-		<key>Modules/DapiConnect.swiftmodule/armv7-apple-ios.swiftmodule</key>
-		<data>
-		DwQeDAc7rdOifFjK5+7tIl0Y2sk=
-		</data>
-		<key>Modules/DapiConnect.swiftmodule/armv7.swiftdoc</key>
-		<data>
-		JPeZ2f+0Aoa+l27XWxY/781RTaU=
-		</data>
-		<key>Modules/DapiConnect.swiftmodule/armv7.swiftmodule</key>
-		<data>
-		DwQeDAc7rdOifFjK5+7tIl0Y2sk=
+		ICNbG5xRUWDHHwWMihwqE02faQc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		D5cAhmHsxqQIcQRBnjoDgzi/eUc=
+		2KHcKjr+Zp29autHr4OYyMRj92M=
 		</data>
 		<key>Muli-Black.ttf</key>
 		<data>
@@ -609,11 +565,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zfFRXrOfwREhhkVRr+DWnae+/xc=
+			NmYn/fQb2yxz+TMWvZa130hd8vA=
 			</data>
 			<key>hash2</key>
 			<data>
-			NIs+cP01T022FHi6emZHm/yGU3U/Zwp/Rax4qhHjh/E=
+			Z5O1BUAPABUy/mqrtTmaUWHVLAejJEyOAZcJ5kuoOa4=
 			</data>
 		</dict>
 		<key>DapiConnect.momd/DapiConnect.mom</key>
@@ -1276,11 +1232,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rGKk/gvTfdCgZoPlTj++YUcpvyI=
+			NTrsgCh8theFVXycMSSLtPKTf9w=
 			</data>
 			<key>hash2</key>
 			<data>
-			QQGBxdmcE+s+odCisD9DAVhAlB6PqaYLPp7qTQ1rXII=
+			aju+G5SX9PH7unN5w/OE5Dfr3IG53HS0YvDtM24is7c=
 			</data>
 		</dict>
 		<key>Headers/DPCConnectionDetails.h</key>
@@ -1415,17 +1371,6 @@
 			dvqWRGzt5deAWnrF0sLfG9xlUexMNKbxtxf9VziwEkA=
 			</data>
 		</dict>
-		<key>Headers/DapiConnect-Swift.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			INg+mzC2mZqIkbNUVebne1b0jQo=
-			</data>
-			<key>hash2</key>
-			<data>
-			QV78SKkBH9MlzaclOEG3D/Zop83OrVAQgevwWbvmYB8=
-			</data>
-		</dict>
 		<key>Headers/DapiConnect.h</key>
 		<dict>
 			<key>hash</key>
@@ -1437,125 +1382,15 @@
 			JVfWhqcpGcfVJtfzN9O/dZi4nnF+QwJlbpbEVnRCmS4=
 			</data>
 		</dict>
-		<key>Modules/DapiConnect.swiftmodule/arm.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			JPeZ2f+0Aoa+l27XWxY/781RTaU=
-			</data>
-			<key>hash2</key>
-			<data>
-			DgnOseQuZ6xzDOnk7S9Bv16WmPtTbbPTV940Kbq6DGE=
-			</data>
-		</dict>
-		<key>Modules/DapiConnect.swiftmodule/arm.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			DwQeDAc7rdOifFjK5+7tIl0Y2sk=
-			</data>
-			<key>hash2</key>
-			<data>
-			Ye7QYPC20yikk/PvL9tyREiE287CnkFVzoTqJLWSu6E=
-			</data>
-		</dict>
-		<key>Modules/DapiConnect.swiftmodule/arm64-apple-ios.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			H0TQFKA5bvcKCBHE+leLhVNBrOo=
-			</data>
-			<key>hash2</key>
-			<data>
-			HYDkrAWXX9B1l3jebvJnjzTD1HfdUXrkl14B575a8Ro=
-			</data>
-		</dict>
-		<key>Modules/DapiConnect.swiftmodule/arm64-apple-ios.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			MxK7E00gVON5EkydQadUn8+GgUg=
-			</data>
-			<key>hash2</key>
-			<data>
-			IWxAv5bb2eLs3g8P1B1NvoeuptSlRQ2Mj65HKFFWfmY=
-			</data>
-		</dict>
-		<key>Modules/DapiConnect.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			H0TQFKA5bvcKCBHE+leLhVNBrOo=
-			</data>
-			<key>hash2</key>
-			<data>
-			HYDkrAWXX9B1l3jebvJnjzTD1HfdUXrkl14B575a8Ro=
-			</data>
-		</dict>
-		<key>Modules/DapiConnect.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			MxK7E00gVON5EkydQadUn8+GgUg=
-			</data>
-			<key>hash2</key>
-			<data>
-			IWxAv5bb2eLs3g8P1B1NvoeuptSlRQ2Mj65HKFFWfmY=
-			</data>
-		</dict>
-		<key>Modules/DapiConnect.swiftmodule/armv7-apple-ios.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			JPeZ2f+0Aoa+l27XWxY/781RTaU=
-			</data>
-			<key>hash2</key>
-			<data>
-			DgnOseQuZ6xzDOnk7S9Bv16WmPtTbbPTV940Kbq6DGE=
-			</data>
-		</dict>
-		<key>Modules/DapiConnect.swiftmodule/armv7-apple-ios.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			DwQeDAc7rdOifFjK5+7tIl0Y2sk=
-			</data>
-			<key>hash2</key>
-			<data>
-			Ye7QYPC20yikk/PvL9tyREiE287CnkFVzoTqJLWSu6E=
-			</data>
-		</dict>
-		<key>Modules/DapiConnect.swiftmodule/armv7.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			JPeZ2f+0Aoa+l27XWxY/781RTaU=
-			</data>
-			<key>hash2</key>
-			<data>
-			DgnOseQuZ6xzDOnk7S9Bv16WmPtTbbPTV940Kbq6DGE=
-			</data>
-		</dict>
-		<key>Modules/DapiConnect.swiftmodule/armv7.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			DwQeDAc7rdOifFjK5+7tIl0Y2sk=
-			</data>
-			<key>hash2</key>
-			<data>
-			Ye7QYPC20yikk/PvL9tyREiE287CnkFVzoTqJLWSu6E=
-			</data>
-		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			D5cAhmHsxqQIcQRBnjoDgzi/eUc=
+			2KHcKjr+Zp29autHr4OYyMRj92M=
 			</data>
 			<key>hash2</key>
 			<data>
-			4tldQE0ifLsQ++NBhMZjnIzeXGofP4FPrO9s6WwrMxE=
+			2PFbLQAix9A1ITHrmjd2HKCplaO/M/XVqpUmeaF8l0k=
 			</data>
 		</dict>
 		<key>Muli-Black.ttf</key>
