@@ -1,8 +1,6 @@
 framework module DapiConnect {
-    umbrella header "DapiConnect.h"
+  umbrella header "DapiConnect.h"
 
-    header "DapiConnect-Swift.h"
-    
-    export *
-    module * { export * }
+  export *
+  module * { export * }
 }
