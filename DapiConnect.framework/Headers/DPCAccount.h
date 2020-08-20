@@ -10,6 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+NS_SWIFT_NAME(DapiAccount)
 @interface DPCAccount : NSObject
 
 @property (nonatomic, strong) NSString *iban;

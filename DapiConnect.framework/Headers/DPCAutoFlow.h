@@ -22,13 +22,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+NS_SWIFT_NAME(DapiAutoFlow)
 @interface DPCAutoFlow : NSObject
 
 @property (nonatomic, weak) id<DPCConnectDelegate> connectDelegate;
-@property (nonatomic, weak) id<DPCPaymentDelegate> paymentDelegate;
 @property (nonatomic, weak) id<DPCAutoFlowDelegate> autoflowDelegate;
+@property (nonatomic, strong) DPCConfigurations *configurations;
+@property (nonatomic, copy) NSString *clientUserID;
+
+- (instancetype)initWithConfigurations:(DPCConfigurations *)configurations clientUserID:(NSString *)clientUserID;
+- (instancetype)init __attribute__((unavailable("use initWithConfigurations:clientUserID:")));
+
 - (void)present;
-- (void)presentWithAccountID:(NSString *)accountID amount:(double)amount;
 - (void)dismissWithCompletion:(void (^ __nullable)(void))completion;
 
 @end

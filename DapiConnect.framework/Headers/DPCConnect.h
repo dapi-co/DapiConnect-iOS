@@ -8,23 +8,30 @@
 
 #import <UIKit/UIKit.h>
 #import "DPCBeneficiaryInfo.h"
+#import "DPCConfigurations.h"
 
 NS_ASSUME_NONNULL_BEGIN
-
 @class DPCConnect;
 
 @protocol DPCConnectDelegate <NSObject>
 
-- (void)connectDidSuccessfullyConnectToBankID:(NSString *)bankID accessID:(NSString *)accessID;
+- (void)connectDidSuccessfullyConnectToBankID:(NSString *)bankID userID:(NSString *)userID;
 - (void)connectDidFailConnectingToBankID:(NSString *)bankID withError:(NSString *)error;
 - (nullable DPCBeneficiaryInfo *)connectBeneficiaryInfoForBankWithID:(NSString *)bankID;
-- (void)connectDidProceedWithBankID:(NSString *)bankID accessID:(NSString *)accessID;
+- (void)connectDidProceedWithBankID:(NSString *)bankID userID:(NSString *)userID;
 
 @end
 
+NS_SWIFT_NAME(DapiConnect)
 @interface DPCConnect : NSObject
 
-@property (nonatomic, weak) id<DPCConnectDelegate> connectDelegate;
+@property (nonatomic, weak) id<DPCConnectDelegate> delegate;
+@property (nonatomic, strong) DPCConfigurations *configurations;
+@property (nonatomic, copy) NSString *clientUserID;
+
+- (instancetype)initWithConfigurations:(DPCConfigurations *)configurations clientUserID:(NSString *)clientUserID;
+- (instancetype)init __attribute__((unavailable("use initWithConfigurations:clientUserID:")));
+
 - (void)present;
 - (void)dismissWithCompletion:(void (^ __nullable)(void))completion;
 

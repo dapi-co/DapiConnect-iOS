@@ -10,12 +10,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+NS_SWIFT_NAME(DapiBeneficiary)
 @interface DPCBeneficiary : NSObject
 
-
 @property (nonatomic, strong) NSString *name;
-@property (nonatomic, strong) NSString *accountNumber;
-@property (nonatomic, strong) NSString *iban;
+@property (nonatomic, strong, nullable) NSString *accountNumber;
+@property (nonatomic, strong, nullable) NSString *iban;
 @property (nonatomic, strong) NSString *type;
 @property (nonatomic, strong) NSString *status;
 @property (nonatomic, strong) NSString *accountID;

@@ -6,15 +6,15 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		HkNBIo8edPbL5kaax5gGQLqSCFY=
+		uQ/dqtl7tFx6vPoItmtAs/T8TqE=
 		</data>
 		<key>DapiConnect.momd/DapiConnect.mom</key>
 		<data>
-		VbnFhrySKWSHGcFa/Jrmh0SvHTg=
+		T1lh6yTBPeTrQspXWIZyxVi9EjY=
 		</data>
 		<key>DapiConnect.momd/VersionInfo.plist</key>
 		<data>
-		dBzUs5raFeGtUgHxHJpkX4aEl7s=
+		ENuC1x+mxIIzDKA4DSSVC15F8ao=
 		</data>
 		<key>DateTools.bundle/am.lproj/DateTools.strings</key>
 		<dict>
@@ -394,89 +394,109 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Headers/DPCAPI.h</key>
+		<data>
+		ycdo7Rnlrx+CQ9rW7N6GJSN93eg=
+		</data>
 		<key>Headers/DPCAccount.h</key>
 		<data>
-		wunh9eqTMLXnhXNc1jjno/2HgPY=
+		WRad/zbUUUir4M/Qtl5VqZg1GQQ=
 		</data>
 		<key>Headers/DPCAddress.h</key>
 		<data>
-		bGGlKel9yppvqzCjCT+PnCLMOR4=
+		4AoKmRCPXdQhmuwySJKfMS1OtVQ=
 		</data>
 		<key>Headers/DPCApp.h</key>
 		<data>
-		DEg267ot/6nl5qYTNchqnZAimWY=
+		rA0xEk47lYy86sGiqo3f4PWH77M=
+		</data>
+		<key>Headers/DPCAuth.h</key>
+		<data>
+		715gwxNBYYRqnOSpZX11QquSGpM=
 		</data>
 		<key>Headers/DPCAutoFlow.h</key>
 		<data>
-		cPWaJdN6UTu8M2daDnt2YAKAi5c=
+		4x6fWaaqZ3cx45NANi4CGM7wF0s=
 		</data>
 		<key>Headers/DPCBalance.h</key>
 		<data>
-		nCcvnSKBqd6Iz6vcYRdN8JIF2OM=
+		yD1ACnUBpST/Fuz0b9r03T70azo=
+		</data>
+		<key>Headers/DPCBankMetadata.h</key>
+		<data>
+		bKVcN/LpBKHAIVenOnf+VBDgtrI=
 		</data>
 		<key>Headers/DPCBeneficiary.h</key>
 		<data>
-		7sCkaxyQOdd0ahQirdlyyF1P3b0=
+		1MoCaGV4W8ww4iQrKdfOn5Z4s94=
 		</data>
 		<key>Headers/DPCBeneficiaryInfo.h</key>
 		<data>
-		esszmS1WeRacdYOVsnr7RqlnZDw=
+		zQZb/C6hgS2knZlzW9qYF0jQ0WA=
+		</data>
+		<key>Headers/DPCClient.h</key>
+		<data>
+		CNPShibuuBknYTMDNQmm1mfpPfI=
 		</data>
 		<key>Headers/DPCConfigurations.h</key>
 		<data>
-		ZuzMyeS5pc6wXUA9X8d7JVDfBMQ=
+		HfN4Xpc3syFbAywrZiFQSgF3mqY=
 		</data>
 		<key>Headers/DPCConnect.h</key>
 		<data>
-		NTrsgCh8theFVXycMSSLtPKTf9w=
+		6cKFtn8Tpq2/YrZPqEqlvIj260I=
 		</data>
 		<key>Headers/DPCConnectionDetails.h</key>
 		<data>
-		Sv3SGrE1+Vo44RzzEak0iHKqlr4=
+		gx2f+M7mB3O0s4N7B+EHnZ+3X1w=
 		</data>
 		<key>Headers/DPCConnectionSubaccountDetails.h</key>
 		<data>
-		YCA8OL0wIGlJt+xbByalT8WRaNw=
+		v15o7U3zcvbd5r087pxHELZtuDE=
+		</data>
+		<key>Headers/DPCData.h</key>
+		<data>
+		/Vy+ivdqGUTMfYzQx6WMf59myy4=
 		</data>
 		<key>Headers/DPCIdentification.h</key>
 		<data>
-		kCwMHrw+C9d62TEmlOCKVPxx1rc=
+		e206ueIy7G9dgwKDj09Ri0h6Vxs=
 		</data>
 		<key>Headers/DPCIdentity.h</key>
 		<data>
-		ZnWu0dqByQKeBNvNxjj8tt4j3UM=
+		DC0Jso722sf55IS71x2c0qtrQRg=
 		</data>
 		<key>Headers/DPCLinesAddress.h</key>
 		<data>
-		rsdz+cMpqniH/tjJdZvgS/42nsQ=
+		cUktJGryHdbvIVianV10j9X/CAc=
 		</data>
 		<key>Headers/DPCMetadata.h</key>
 		<data>
-		Zu+10dmiwEkdkcnE3vm6hEsrQro=
+		E78vW9AmZb+p9Lj8HaM8li/6io4=
 		</data>
 		<key>Headers/DPCNumber.h</key>
 		<data>
-		LdtRhmzogqXi8gzt1D3MITNSIwE=
+		ap+eZwA3hJbwIc28MHeTkFHhRCc=
 		</data>
 		<key>Headers/DPCPair.h</key>
 		<data>
-		IpEHE1YSARKqW1U9CJvEw5f1X7M=
+		wfpmpsPBSQ7pv7L1xKe/GxMOQcY=
 		</data>
 		<key>Headers/DPCPayment.h</key>
 		<data>
-		u17MecPeGXnrC3C1cAKDsAqtFVU=
+		AmnmsAOvaLp+sVWpAntfIDWh6FI=
 		</data>
 		<key>Headers/DPCResult.h</key>
 		<data>
-		ACcJWojogh585TLvnHQ0r+eYVGw=
+		wfM6WPVmJol/i0haT/gE01WVKm8=
 		</data>
 		<key>Headers/DPCTransaction.h</key>
 		<data>
-		7XNbrvSRlkdL8phR1+UQ48cokL0=
+		Rwo5GHYBhluGBAtdtj+QC2PXxWQ=
 		</data>
 		<key>Headers/DPCTransferBound.h</key>
 		<data>
-		MrPL5aVpKfr6XAfMTdjT18BDFSM=
+		VWyHG1UYjUhjk0tW62PBk7Sb9j0=
 		</data>
 		<key>Headers/DapiConnect.h</key>
 		<data>
@@ -484,15 +504,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		tE2YPv2ffhoNOEUApAfpglDUQNY=
+		slLrcVyN27njeSFyk52A+J5X/us=
 		</data>
 		<key>MFAOnboardingViewController.nib/objects-11.0+.nib</key>
 		<data>
-		mPiG7PBc7A7khpT7eFk8dm46UM0=
+		DNikleZUKsqG+GMPLK1aF8rCKEg=
 		</data>
 		<key>MFAOnboardingViewController.nib/runtime.nib</key>
 		<data>
-		aodDiWwRpBlhjneGCxuDFbM4qrE=
+		/3rG9MsuUi1Lyh0c/4AacTFOBlE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -573,33 +593,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HkNBIo8edPbL5kaax5gGQLqSCFY=
+			uQ/dqtl7tFx6vPoItmtAs/T8TqE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Yo1SyXr/2jOcmyZVXAmB++rgu0uBaS6qlDwLfCMgNZw=
+			Ni4GMaWsoMnVFPdOU4r4Oym7AJMxP/jLk7pSFKvs0yY=
 			</data>
 		</dict>
 		<key>DapiConnect.momd/DapiConnect.mom</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VbnFhrySKWSHGcFa/Jrmh0SvHTg=
+			T1lh6yTBPeTrQspXWIZyxVi9EjY=
 			</data>
 			<key>hash2</key>
 			<data>
-			9mslOBBcZJjASlgoMJ5LBNzDRBTDASbaH8ibpOzSEdc=
+			5xo2O5W/PbShbTjNQ1hcB6xgwKVcwRUKhPnZTtj5X8Q=
 			</data>
 		</dict>
 		<key>DapiConnect.momd/VersionInfo.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dBzUs5raFeGtUgHxHJpkX4aEl7s=
+			ENuC1x+mxIIzDKA4DSSVC15F8ao=
 			</data>
 			<key>hash2</key>
 			<data>
-			n3LTyVmwpxsRglknQq6MEyBLFkYyalKfqymiQ57h01c=
+			144KTCqZ42FFP/oCrK9MbiHhkO/y+G0xziMoTR1qnxo=
 			</data>
 		</dict>
 		<key>DateTools.bundle/am.lproj/DateTools.strings</key>
@@ -1148,235 +1168,290 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Headers/DPCAPI.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ycdo7Rnlrx+CQ9rW7N6GJSN93eg=
+			</data>
+			<key>hash2</key>
+			<data>
+			qOnsHvzshcWBTtIov4ungsqdeC3z3twhIqNnmsQveGI=
+			</data>
+		</dict>
 		<key>Headers/DPCAccount.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wunh9eqTMLXnhXNc1jjno/2HgPY=
+			WRad/zbUUUir4M/Qtl5VqZg1GQQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			KfpdPiGxGQQ782ODxaFYQ4xg2ieh9vejT0evgo5fv3c=
+			K11yWiAMUyEkConn1b9OhrjKQkq5IEpZjLUImBpTPgs=
 			</data>
 		</dict>
 		<key>Headers/DPCAddress.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bGGlKel9yppvqzCjCT+PnCLMOR4=
+			4AoKmRCPXdQhmuwySJKfMS1OtVQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			eavKyKlrnOCvBU8nh5DspanKdaLwKgU7vDdDpMI/PS4=
+			2nTV3+GE551OSRbX8oWb39A1GlcYiDZPjYRFcQhCk2A=
 			</data>
 		</dict>
 		<key>Headers/DPCApp.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DEg267ot/6nl5qYTNchqnZAimWY=
+			rA0xEk47lYy86sGiqo3f4PWH77M=
 			</data>
 			<key>hash2</key>
 			<data>
-			+4Bdk7QFLTp2diptn0oPK6xWqqhBEEKTdrPUOof6aZo=
+			CZk6q40b8E1TsSzwL7+2tO+9HQwWAgUp1zRkNm6AdHg=
+			</data>
+		</dict>
+		<key>Headers/DPCAuth.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			715gwxNBYYRqnOSpZX11QquSGpM=
+			</data>
+			<key>hash2</key>
+			<data>
+			Bk2JSb8fMj7LORizb0bEJrcrk+wnWmXlB7V+dksZ9gM=
 			</data>
 		</dict>
 		<key>Headers/DPCAutoFlow.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cPWaJdN6UTu8M2daDnt2YAKAi5c=
+			4x6fWaaqZ3cx45NANi4CGM7wF0s=
 			</data>
 			<key>hash2</key>
 			<data>
-			y6sNzarTY3xBWNlZLA/wtOEBBb2H2x/LAHWR5Ts6RDA=
+			ttsuGC1+eh49LB3xeLPLgUtiVz242r1n41vuK7EDh3U=
 			</data>
 		</dict>
 		<key>Headers/DPCBalance.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nCcvnSKBqd6Iz6vcYRdN8JIF2OM=
+			yD1ACnUBpST/Fuz0b9r03T70azo=
 			</data>
 			<key>hash2</key>
 			<data>
-			k7gxe1uafCi6E6Q6ieQ34GSGZV+CZEtXmXugktvsw0Q=
+			6R7qRbUz8YSa53XSDIWFeznL5XKfbbEdeZsXaqK3hDk=
+			</data>
+		</dict>
+		<key>Headers/DPCBankMetadata.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bKVcN/LpBKHAIVenOnf+VBDgtrI=
+			</data>
+			<key>hash2</key>
+			<data>
+			UTBHGvuLPDqJfb/7sdV4j8cm7OF0Djct0fROtMN+TRA=
 			</data>
 		</dict>
 		<key>Headers/DPCBeneficiary.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7sCkaxyQOdd0ahQirdlyyF1P3b0=
+			1MoCaGV4W8ww4iQrKdfOn5Z4s94=
 			</data>
 			<key>hash2</key>
 			<data>
-			Nbz9jsPOFxRQNS6+pF5vIZzo6Wx9x3K9vHr9/qclLK8=
+			582begwGNPJ/v359fgyI2qGd6d17um6PLsQ/ocQt37I=
 			</data>
 		</dict>
 		<key>Headers/DPCBeneficiaryInfo.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			esszmS1WeRacdYOVsnr7RqlnZDw=
+			zQZb/C6hgS2knZlzW9qYF0jQ0WA=
 			</data>
 			<key>hash2</key>
 			<data>
-			OQhSCfEe0LlckX287l0JECJBtmJbd8gvIDink9FrIvM=
+			2AUtek58Q3Fmtcnq6vgN+leB6EnDGqnMC+Prk0Poz6U=
+			</data>
+		</dict>
+		<key>Headers/DPCClient.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CNPShibuuBknYTMDNQmm1mfpPfI=
+			</data>
+			<key>hash2</key>
+			<data>
+			kv1GT04w5lcLypKTWT0QvwTYklvlUbGM2AvHpZFDxL8=
 			</data>
 		</dict>
 		<key>Headers/DPCConfigurations.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZuzMyeS5pc6wXUA9X8d7JVDfBMQ=
+			HfN4Xpc3syFbAywrZiFQSgF3mqY=
 			</data>
 			<key>hash2</key>
 			<data>
-			ruHXW7/eDdjv7jrTCjzVZ0LLVi3EG9DoNu4pCHPOqho=
+			LiD0X7OO7nLMc+rMbg+ca5E8Gg+jDX2mlVGE/IBPf8o=
 			</data>
 		</dict>
 		<key>Headers/DPCConnect.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NTrsgCh8theFVXycMSSLtPKTf9w=
+			6cKFtn8Tpq2/YrZPqEqlvIj260I=
 			</data>
 			<key>hash2</key>
 			<data>
-			aju+G5SX9PH7unN5w/OE5Dfr3IG53HS0YvDtM24is7c=
+			4mG/m0BeBtyiajl00eXlFY7wj4Rf3jdJgXw/yOCkv/I=
 			</data>
 		</dict>
 		<key>Headers/DPCConnectionDetails.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Sv3SGrE1+Vo44RzzEak0iHKqlr4=
+			gx2f+M7mB3O0s4N7B+EHnZ+3X1w=
 			</data>
 			<key>hash2</key>
 			<data>
-			Z68OJ7yEtTU9a/ym/r1T2zqo3JT8DMHEl/EPPvoeziM=
+			pqup6vplRrtxc5bEHLTu50fyIOK78KZm2kkkXy09TpE=
 			</data>
 		</dict>
 		<key>Headers/DPCConnectionSubaccountDetails.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YCA8OL0wIGlJt+xbByalT8WRaNw=
+			v15o7U3zcvbd5r087pxHELZtuDE=
 			</data>
 			<key>hash2</key>
 			<data>
-			BDQnBScUPPhnPIPsyCFvuGZoFn6i32sWPiL5/sBln18=
+			3WTDpjU9ntmlBCsX2cZhD+lcgZhNQ6J27UTL4wyjYwU=
+			</data>
+		</dict>
+		<key>Headers/DPCData.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/Vy+ivdqGUTMfYzQx6WMf59myy4=
+			</data>
+			<key>hash2</key>
+			<data>
+			XjrAIDZWvNvu+cwdmfLB+xJoKed19wIhAQzQq67hOME=
 			</data>
 		</dict>
 		<key>Headers/DPCIdentification.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			kCwMHrw+C9d62TEmlOCKVPxx1rc=
+			e206ueIy7G9dgwKDj09Ri0h6Vxs=
 			</data>
 			<key>hash2</key>
 			<data>
-			lXVakY/pCi5nr9W8TazDnS8aZeq1C7W3ECH7pTJq7XU=
+			GInW9DI1n6rd5XJ3rnUDEwmZQmv5JUPmh9En7MCsGlk=
 			</data>
 		</dict>
 		<key>Headers/DPCIdentity.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZnWu0dqByQKeBNvNxjj8tt4j3UM=
+			DC0Jso722sf55IS71x2c0qtrQRg=
 			</data>
 			<key>hash2</key>
 			<data>
-			mF3WZ2UTckUf98x1v/zdASitP8NXkAUWOsHsRTD4csw=
+			cER63T3IATUtQkSDviKYl2oD0YOTN8dp1tNueV1bIck=
 			</data>
 		</dict>
 		<key>Headers/DPCLinesAddress.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rsdz+cMpqniH/tjJdZvgS/42nsQ=
+			cUktJGryHdbvIVianV10j9X/CAc=
 			</data>
 			<key>hash2</key>
 			<data>
-			l1A8NRh2MPdF2nuHlzqnd6J4SyaENhhlh2WoiImDkS4=
+			YVg2PuhBhV/z2FlKwdmF+JwHoX7mNgJInboNlYY9HAY=
 			</data>
 		</dict>
 		<key>Headers/DPCMetadata.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Zu+10dmiwEkdkcnE3vm6hEsrQro=
+			E78vW9AmZb+p9Lj8HaM8li/6io4=
 			</data>
 			<key>hash2</key>
 			<data>
-			8V7sqUABQXpqyM6pgYKGxXolfG/9A4ggHKGcshb9ipg=
+			4iKwdoqapgKacV3qT0JFan1F9X6eMH2nckTW/X3FDGk=
 			</data>
 		</dict>
 		<key>Headers/DPCNumber.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LdtRhmzogqXi8gzt1D3MITNSIwE=
+			ap+eZwA3hJbwIc28MHeTkFHhRCc=
 			</data>
 			<key>hash2</key>
 			<data>
-			kXPsZ9oM+vb3XQ0Mv+Vmi1Hjo4X7FNyfCL+6KkV1jjg=
+			OmlIpzTnJzOH7fiNXUqdB0XMBCgFnpF6siMiiVUYVGk=
 			</data>
 		</dict>
 		<key>Headers/DPCPair.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IpEHE1YSARKqW1U9CJvEw5f1X7M=
+			wfpmpsPBSQ7pv7L1xKe/GxMOQcY=
 			</data>
 			<key>hash2</key>
 			<data>
-			pyu81Qi67Ve/kS7vTEibbO/erdBqccOBaYtns77vpT4=
+			AT5hsPVGQpXIdkO5rlxPkiM05X1cfPKT+/fvzihul9k=
 			</data>
 		</dict>
 		<key>Headers/DPCPayment.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			u17MecPeGXnrC3C1cAKDsAqtFVU=
+			AmnmsAOvaLp+sVWpAntfIDWh6FI=
 			</data>
 			<key>hash2</key>
 			<data>
-			YlRUl5+VHkzm+kKcfpz2iDVa4UHsuJ3F29aBbD+HB7E=
+			NKPNbien+9NPiEJslhnpk859SVXPlj/IQ0Mwc9qemD0=
 			</data>
 		</dict>
 		<key>Headers/DPCResult.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ACcJWojogh585TLvnHQ0r+eYVGw=
+			wfM6WPVmJol/i0haT/gE01WVKm8=
 			</data>
 			<key>hash2</key>
 			<data>
-			hwykpLnXpCQDZPswjLS+gm0ZgtSUpDYSK86Z5NW2dAA=
+			WmT8Q6/DtQv5G1hU53xWeYyddbgUph3MR3YCGo98d/4=
 			</data>
 		</dict>
 		<key>Headers/DPCTransaction.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7XNbrvSRlkdL8phR1+UQ48cokL0=
+			Rwo5GHYBhluGBAtdtj+QC2PXxWQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			2YN8ioIFOeWj8w0sPy31viiRhs0DSxLRZWoH0dITWP8=
+			q7F3jf6RHhxK4ogZNBFeSJ9IYO4RuKjg1yw1aBO2tYA=
 			</data>
 		</dict>
 		<key>Headers/DPCTransferBound.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MrPL5aVpKfr6XAfMTdjT18BDFSM=
+			VWyHG1UYjUhjk0tW62PBk7Sb9j0=
 			</data>
 			<key>hash2</key>
 			<data>
-			dvqWRGzt5deAWnrF0sLfG9xlUexMNKbxtxf9VziwEkA=
+			C9mPz1CaFeR5Nb5eQyqbH45W8M3UpPYKOzbnpcKTMAU=
 			</data>
 		</dict>
 		<key>Headers/DapiConnect.h</key>
@@ -1394,22 +1469,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mPiG7PBc7A7khpT7eFk8dm46UM0=
+			DNikleZUKsqG+GMPLK1aF8rCKEg=
 			</data>
 			<key>hash2</key>
 			<data>
-			BKtUQvtS3naYsC6dLBE1C9Ii4LMbzHVZiemLPgY3BoQ=
+			nHl/45fnq5GR7sKBlieal60ehExZlIJkGzaC/meW5Lk=
 			</data>
 		</dict>
 		<key>MFAOnboardingViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			aodDiWwRpBlhjneGCxuDFbM4qrE=
+			/3rG9MsuUi1Lyh0c/4AacTFOBlE=
 			</data>
 			<key>hash2</key>
 			<data>
-			p94ZtqZ18+MO3MVaUtVIxOH3s/uXg8q8XVoE5yaJEHE=
+			fBgdvrPLkU2Y6ANPz37EJgPF0itKuq0RcbtSdcqCqzw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

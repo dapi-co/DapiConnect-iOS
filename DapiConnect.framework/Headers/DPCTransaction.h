@@ -11,6 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+NS_SWIFT_NAME(DapiTransaction)
 @interface DPCTransaction : NSObject
 
 @property (nonatomic, strong) NSNumber *beforeAmount;

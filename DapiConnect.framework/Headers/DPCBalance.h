@@ -11,6 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+NS_SWIFT_NAME(DapiBalance)
 @interface DPCBalance : NSObject
 
 @property (nonatomic, strong) NSNumber *amount;

@@ -10,6 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+NS_SWIFT_NAME(DapiNumber)
 @interface DPCNumber : NSObject
 
 @property (nonatomic, copy) NSString *type;

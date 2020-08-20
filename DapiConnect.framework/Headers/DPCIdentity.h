@@ -13,6 +13,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+NS_SWIFT_NAME(DapiIdentity)
 @interface DPCIdentity : NSObject
 
 @property (nonatomic, copy) NSString *nationality;

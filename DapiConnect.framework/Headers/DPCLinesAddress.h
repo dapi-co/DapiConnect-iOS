@@ -10,6 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+NS_SWIFT_NAME(DapiLinesAddress)
 @interface DPCLinesAddress : NSObject
 
 @property (nonatomic, copy) NSString *line1;

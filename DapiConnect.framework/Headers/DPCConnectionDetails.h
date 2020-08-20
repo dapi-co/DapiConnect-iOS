@@ -11,6 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+NS_SWIFT_NAME(DapiConnectionDetails)
 @interface DPCConnectionDetails : NSObject
 
 @property (nullable, nonatomic, copy) NSString *bankID;

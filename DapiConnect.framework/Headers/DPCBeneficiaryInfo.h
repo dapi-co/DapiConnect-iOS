@@ -11,6 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+NS_SWIFT_NAME(DapiBeneficiaryInfo)
 @interface DPCBeneficiaryInfo : NSObject
 
 @property (nonatomic, strong, nullable) DPCLinesAddress *linesAddress;

@@ -17,9 +17,6 @@ extern DPCAppEnvironment const DPCAppEnvironmentSandbox;
 
 typedef NSString *DPCEndPoint NS_TYPED_EXTENSIBLE_ENUM;
 
-extern DPCEndPoint const DPCEndPointGetAllBanks;
-extern DPCEndPoint const DPCEndPointInitializeConnect;
-extern DPCEndPoint const DPCEndPointLoginUser;
 extern DPCEndPoint const DPCEndPointExchangeToken;
 extern DPCEndPoint const DPCEndPointGetIdentity;
 extern DPCEndPoint const DPCEndPointGetAccounts;
@@ -38,14 +35,13 @@ extern DPCColorScheme const DPCColorSchemeGeneral;
 extern DPCColorScheme const DPCColorSchemeBW;
 extern DPCColorScheme const DPCColorSchemeNeon;
 
+NS_SWIFT_NAME(DapiConfigurations)
 @interface DPCConfigurations : NSObject
 
 /*!
- @brief The environment your Dapi app on the dashboard is using.
- 
- @discussion Make sure to switch to production before releasing to the App Store.
+ @brief appKey The key obtained from Dapi dashboard
 */
-@property (nonatomic, nonatomic, copy) DPCAppEnvironment environment;
+@property (nonatomic, copy) NSString *appKey;
 
 /*!
  @brief The URL where your Dapi server is hosted.
@@ -55,15 +51,37 @@ extern DPCColorScheme const DPCColorSchemeNeon;
 @property (nonnull, nonatomic, strong) NSURLComponents *baseUrl;
 
 /*!
+ @brief Supported countries for banks shown in connect.
+ 
+ @discussion We expect that you pass two-letter country codes (ISO 3166-1 alpha-2).
+*/
+@property (nonatomic, copy) NSArray<NSString *> *countries;
+
+/*!
+ @discussion A unique identifier for the currently logged in user to your app.
+ All fetched data will be associated with this property
+*/
+@property (nonatomic, copy) NSString *clientUserID;
+
+/*!
+ @brief The environment your Dapi app on the dashboard is using.
+ 
+ @discussion Make sure to switch to production before releasing to the App Store.
+*/
+@property (nonatomic, copy) DPCAppEnvironment environment;
+
+/*!
  @brief Let's you set a custom end point. This only needed when not using the server-side SDK.
 */
 @property (nonatomic, copy) NSDictionary<DPCEndPoint, NSString *> *endpoints;
 
 @property (nonatomic, nonatomic, copy) DPCColorScheme colorScheme;
 
-@property (nonatomic, copy) NSArray<NSString *> *countries;
-
-@property (nonatomic, assign) BOOL includeExperimentalBanks;
+/*!
+ @brief Whether include banks that marked as experimental in the banks list of connect.
+ @discussion A bank is marked as experimental when the bank changes their MFA (Multi-factor authentication) but the SDK is not upgraded to handle the new MFA.
+*/
+@property (nonatomic, assign) BOOL isExperimental;
 
 @property (nonatomic, copy) NSDictionary<DPCEndPoint, NSArray<NSURLQueryItem *> *> *endPointExtraQueryItems;
 @property (nonatomic, copy) NSDictionary<DPCEndPoint, NSDictionary<NSString *, NSString *> *> *endPointExtraHeaderFields;
@@ -74,6 +92,9 @@ extern DPCColorScheme const DPCColorSchemeNeon;
  @discussion The appended dictionary will be under the key "UserExtraBody" at the root JSON body. This will not work with all 'DPCEndPoint's since some of them are HTTP GET requests.
 */
 @property (nonatomic, copy) NSDictionary<DPCEndPoint, NSDictionary<NSString *, id> *> *endPointExtraBody;
+
+- (instancetype)initWithAppKey:(NSString *)appKey baseUrl:(NSURLComponents *)baseUrl countries:(NSArray<NSString *> *)countries clientUserID:(NSString *)clientUserID;
+- (instancetype)init __attribute__((unavailable("use [DPCConfigurations initWithAppKey:baseUrl:countries:clientUserID:]")));
 
 @end
 

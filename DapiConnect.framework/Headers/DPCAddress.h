@@ -10,6 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+NS_SWIFT_NAME(DapiAddress)
 @interface DPCAddress : NSObject
 
 @property (nonatomic, copy) NSString *flat;

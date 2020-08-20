@@ -2,48 +2,21 @@
 //  DPCMetadata.h
 //  DapiConnect
 //
-//  Created by Mohammed Ennabah on 29/03/2020.
+//  Created by Mohammed Ennabah on 8/20/20.
 //  Copyright © 2020 Dapi. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "DPCLinesAddress.h"
-#import "DPCTransferBound.h"
-#import "DPCBeneficiaryInfo.h"
+#import "DPCAPI.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DPCMetadata : NSObject
+NS_SWIFT_NAME(DapiMetadata)
+@interface DPCMetadata : DPCAPI
 
-@property (nonatomic, strong) DPCLinesAddress *linesAddress;
-@property (nonatomic, copy) NSString *bankName;
-@property (nonatomic, copy) NSString *branchAddress;
-@property (nonatomic, copy) NSString *branchName;
-@property (nonatomic, copy) NSString *swiftCode;
-@property (nonatomic, assign) BOOL isCreateBeneficairyEndpointRequired;
-// The number of seconds required to wait after adding a beneficiary and before creating a transfer
-/// ---| create beneficiary |-----------:::beneficiaryCoolDownPeriod:::-----------| create payment |---
-@property (nonatomic, assign) NSTimeInterval beneficiaryCoolDownPeriod;
-@property (nonatomic, copy) NSArray<DPCTransferBound *> *transferBounds;
-@property (nonatomic, strong) DPCPair *country;
-// Eldest transaction can be retrieved by the transactions API
-@property (nonatomic, assign) NSTimeInterval transactionsRetentionPeriod;
+- (nullable instancetype)initWithUserID:(NSString *)userID clientUserID:(NSString *)clientUserID configurations:(DPCConfigurations *)configurations;
+- (instancetype)init __attribute__((unavailable("use initWithUserID:clientUserID:configurations:")));
 
-- (instancetype)initWithDictionary:(NSDictionary<NSString *, id> *)dictionary;
-
-/*!
- @brief Creates a beneficiary info representation to easily pass it to create beneficiary.
- @discussion Note that the returned object is still missing more important parameters:
- 
- * accountNumber and/or iban.
- * name.
- * phoneNumber.
- * sendingSwiftCode
- * sendingCountryCode
- 
- @return Beneficiary info object prefilled with most of the required params
-*/
-- (DPCBeneficiaryInfo *)basicBeneficiaryInfo;
+- (void)getAccountMetadata:(void (^ __nullable)(DPCBankMetadata *__nullable accounts, NSError *__nullable error, JobID *__nullable jobID))completion;
 
 @end
 

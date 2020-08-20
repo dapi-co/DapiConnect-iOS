@@ -10,6 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+NS_SWIFT_NAME(DapiIdentification)
 @interface DPCIdentification : NSObject
 
 @property (nonatomic, copy) NSString *type;

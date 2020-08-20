@@ -10,6 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+NS_SWIFT_NAME(DapiPair)
 @interface DPCPair : NSObject
 
 @property (nonatomic, strong) NSString *code;
