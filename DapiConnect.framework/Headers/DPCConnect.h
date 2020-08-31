@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)connectDidSuccessfullyConnectToBankID:(NSString *)bankID userID:(NSString *)userID;
 - (void)connectDidFailConnectingToBankID:(NSString *)bankID withError:(NSString *)error;
-- (nullable DPCBeneficiaryInfo *)connectBeneficiaryInfoForBankWithID:(NSString *)bankID;
+- (void)connectBeneficiaryInfoForBankWithID:(NSString *)bankID beneficiaryInfo:(void (^)(DPCBeneficiaryInfo *_Nullable beneficiaryInfo))info;
 - (void)connectDidProceedWithBankID:(NSString *)bankID userID:(NSString *)userID;
 
 @end

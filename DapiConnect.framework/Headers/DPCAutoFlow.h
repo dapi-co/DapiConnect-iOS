@@ -15,8 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class DPCAutoFlow;
 
 @protocol DPCAutoFlowDelegate <NSObject>
-
-- (DPCBeneficiaryInfo *)autoFlow:(DPCAutoFlow *)autoFlow beneficiaryInfoForBankID:(NSString *)bankID supportsCreateBeneficiary:(BOOL)supportsCreateBeneficiary;
+- (void)autoFlow:(DPCAutoFlow *)autoFlow beneficiaryInfoForBankWithID:(NSString *)bankID beneficiaryInfo:(void (^)(DPCBeneficiaryInfo *_Nullable beneficiaryInfo))info;
 - (void)autoFlow:(DPCAutoFlow *)autoFlow didSuccessfullyTransferAmount:(double)amount fromAccount:(NSString *)senderAccountID toAccuntID:(NSString *)recipientAccountID;
 - (void)autoFlow:(DPCAutoFlow *)autoFlow didFailToTransferFromAccount:(NSString *)senderAccountID toAccuntID:(NSString * _Nullable)recipientAccountID withError:(NSError *)error;
 
