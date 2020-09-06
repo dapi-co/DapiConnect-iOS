@@ -34,13 +34,6 @@ NS_SWIFT_NAME(DapiClient)
 */
 @property (nonatomic, copy) NSString *userID;
 
-/*!
- @discussion All Dapi's userIDs.
- Each userID is a connection to bank. The returned userIDs are filtered by the clientUserID.
- If you want to get all userIDs without filtering by the clientUserID, use `DPCApp.userIDs`
-*/
-@property (readonly, nonatomic, strong) NSArray<NSString *> *userIDs;
-
 - (instancetype)initWithConfigurations:(DPCConfigurations *)configurations;
 - (instancetype)init __attribute__((unavailable("use initWithConfigurations:")));
 

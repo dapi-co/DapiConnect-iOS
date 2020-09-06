@@ -7,19 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DPCConnectionSubaccountDetails.h"
+#import "DPCAccount.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 NS_SWIFT_NAME(DapiConnectionDetails)
 @interface DPCConnectionDetails : NSObject
 
+@property (nullable, nonatomic, copy) NSString *userID;
+@property (nullable, nonatomic, copy) NSString *clientUserID;
 @property (nullable, nonatomic, copy) NSString *bankID;
 @property (nullable, nonatomic, copy) NSString *bankName;
 @property (assign) double beneficiaryCoolDownPeriod;
 @property (nullable, nonatomic, copy) NSString *countryName;
 @property (assign) BOOL isCreateBeneficiaryEndpointRequired;
-@property (nonatomic, copy) NSArray<DPCConnectionSubaccountDetails *> *subaccountsDetails;
+@property (nonatomic, copy) NSArray<DPCAccount *> *accounts;
 
 @end
 

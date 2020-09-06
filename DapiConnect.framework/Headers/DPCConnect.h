@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "DPCBeneficiaryInfo.h"
 #import "DPCConfigurations.h"
+#import "DPCConnectionDetails.h"
 
 NS_ASSUME_NONNULL_BEGIN
 @class DPCConnect;
@@ -34,6 +35,13 @@ NS_SWIFT_NAME(DapiConnect)
 
 - (void)present;
 - (void)dismissWithCompletion:(void (^ __nullable)(void))completion;
+
+/*!
+ @discussion Returns all connections.
+ For instance, details will include subaccounts, bankID, name and more.
+ The returned userIDs are filtered by the clientUserID.
+ */
+- (NSArray<DPCConnectionDetails *> *)getConnections;
 
 @end
 

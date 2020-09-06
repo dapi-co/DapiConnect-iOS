@@ -16,7 +16,7 @@ FOUNDATION_EXPORT const unsigned char DapiConnectVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <DapiConnect/PublicHeader.h>
 
-#import <DapiConnect/DPCApp.h>
 #import <DapiConnect/DPCConnect.h>
 #import <DapiConnect/DPCPayment.h>
 #import <DapiConnect/DPCAutoFlow.h>
+#import <DapiConnect/DPCClient.h>
