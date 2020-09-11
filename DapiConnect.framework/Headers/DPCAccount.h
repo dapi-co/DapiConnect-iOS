@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DPCPair.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,7 +16,7 @@ NS_SWIFT_NAME(DapiAccount)
 
 @property (nonatomic, strong) NSString *iban;
 @property (nonatomic, strong) NSString *number;
-@property (nonatomic, strong) NSString *currency;
+@property (nonatomic, strong) DPCPair *currency;
 @property (nonatomic, strong) NSString *type;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *accountID;
