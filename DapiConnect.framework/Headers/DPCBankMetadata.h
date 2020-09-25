@@ -10,6 +10,7 @@
 #import "DPCLinesAddress.h"
 #import "DPCTransferBound.h"
 #import "DPCBeneficiaryInfo.h"
+#import "DPCCreateBeneficiaryValidator.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -29,6 +30,8 @@ NS_SWIFT_NAME(DapiBankMetadata)
 @property (nonatomic, strong) DPCPair *country;
 // Eldest transaction can be retrieved by the transactions API
 @property (nonatomic, assign) NSTimeInterval transactionsRetentionPeriod;
+@property (nonatomic, strong) DPCCreateBeneficiaryValidator *sameCreateBeneficiaryValidator;
+@property (nonatomic, strong) DPCCreateBeneficiaryValidator *localCreateBeneficiaryValidator;
 
 - (instancetype)initWithDictionary:(NSDictionary<NSString *, id> *)dictionary;
 

@@ -83,6 +83,13 @@ NS_SWIFT_NAME(DapiConfigurations)
 */
 @property (nonatomic, assign) BOOL isExperimental;
 
+/*!
+ @brief Allow DapiConnect to auto truncate some string properties before being sent to the bank
+ @discussion Some bank require strings to have a max length. This property is true by default. Otherwise, error will be thrown.
+ Objects used in payment.createBeneficiary, payment.createTransfer, etc.
+*/
+@property (nonatomic, assign, getter=isAutoTruncate) BOOL autoTruncate;
+
 @property (nonatomic, copy) NSDictionary<DPCEndPoint, NSArray<NSURLQueryItem *> *> *endPointExtraQueryItems;
 @property (nonatomic, copy) NSDictionary<DPCEndPoint, NSDictionary<NSString *, NSString *> *> *endPointExtraHeaderFields;
 
