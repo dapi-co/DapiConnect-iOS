@@ -28,6 +28,8 @@ NS_SWIFT_NAME(DapiAutoFlow)
 @property (nonatomic, weak) id<DPCAutoFlowDelegate> autoflowDelegate;
 @property (nonatomic, strong) DPCConfigurations *configurations;
 @property (nonatomic, copy) NSString *clientUserID;
+@property (nonatomic, assign) double minimumAmount;
+@property (nonatomic, assign) double maximumAmount;
 
 - (instancetype)initWithConfigurations:(DPCConfigurations *)configurations clientUserID:(NSString *)clientUserID;
 - (instancetype)init __attribute__((unavailable("use initWithConfigurations:clientUserID:")));
