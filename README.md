@@ -9,23 +9,26 @@ DapiConnect for iOS is a prebuilt SDK that reduces the time it takes to integrat
 
 The SDK provides direct access to Dapi endpoints and offers optional UI to manage users' accounts, subaccounts, balance and money transfer.
 
-### Requirement
+### Requirements
 
 - iOS v10.3 or later
 - App key (obtain from [Dapi Dashboard](https://dashboard.dapi.co/))
 - Latest version of DapiConnect framework (obtain from [DapiConnect.framework](https://github.com/dapi-co/DapiConnect-iOS/releases))
 - SDK-Server (see below)
+iOS v10.3 or later
 
-## Integration
+	
+## Before you start
 
-Currently, the SDK is only available through [CocoaPods](https://cocoapods.org/#install). To start integrating with  [DapiConnect.framework](https://github.com/dapi-co/DapiConnect-iOS/releases):
+Currently, the SDK is only available through [CocoaPods](https://cocoapods.org/#install). 
+To start integrating with  [DapiConnect.framework](https://github.com/dapi-co/DapiConnect-iOS/releases):
 
-- Update your Podfile to include 
+1. Update your Podfile to include 
 
     ```ruby
     pod 'DapiConnect'
     ```
-- Run the following command in your project directory
+2. Run the following command in your project directory
 
     ```console
     pod install
@@ -33,14 +36,15 @@ Currently, the SDK is only available through [CocoaPods](https://cocoapods.org/#
 
 ## How it Works
 
-DapiConnect SDK communicates with API endpoints to make network requests. Requests do NOT go to Dapi servers directly. Instead, requests first go to your server and then to Dapi servers. See the example gif below:
-> *(don't worry, we also have an SDK for your server)*
+DapiConnect SDK communicates with API endpoints to make network requests. Requests do NOT go to Dapi servers directly. Instead, requests first go to your server and then to Dapi servers. 
 
-![dfd](https://github.com/dapi-co/DapiConnect-iOS/raw/master/DapiConnectGIF.gif)
+### Why?
 
 This is a security feature that keeps control in your hands. Your server is responsible for maintaining access tokens by creating, storing, and refreshing them.
+See the example gif below:
+![dfd](https://files.readme.io/2f94f72-Comp_1_8.gif)
 
-## Usage
+## Integration
 
 DapiConnect SDK can be integrated with the following steps:
 
