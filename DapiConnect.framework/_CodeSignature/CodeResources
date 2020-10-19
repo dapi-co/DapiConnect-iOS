@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		FkDuSr0IgM9jhvVKs5ZS5FMlVEU=
+		hDOxLxnCtWA7Yn8niiLSmo+ha0M=
 		</data>
 		<key>DapiConnect.momd/DapiConnect.mom</key>
 		<data>
-		jwmPQ0y5ua+KRsJPFkLZADGXQ0A=
+		/gQHMZ66QM/7kdVn9siaDjHJPEE=
 		</data>
 		<key>DapiConnect.momd/VersionInfo.plist</key>
 		<data>
@@ -412,7 +412,7 @@
 		</data>
 		<key>Headers/DPCAutoFlow.h</key>
 		<data>
-		nrB6oz9f0OzfmpKYiHw2R5yWLsc=
+		kV9ZfialcpBU9Zq+BFc7YxwrBQM=
 		</data>
 		<key>Headers/DPCBalance.h</key>
 		<data>
@@ -488,7 +488,7 @@
 		</data>
 		<key>Headers/DPCPayment.h</key>
 		<data>
-		AmnmsAOvaLp+sVWpAntfIDWh6FI=
+		hM2969ijuth92/4z5wv5/1FSd8c=
 		</data>
 		<key>Headers/DPCResult.h</key>
 		<data>
@@ -512,15 +512,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		XIX6kNMnF8u9wwNkOgd8O5l6v/c=
+		QGTt0Wv3JEyVazf/PdQOmxOXxdw=
 		</data>
 		<key>MFAOnboardingViewController.nib/objects-11.0+.nib</key>
 		<data>
-		AfxgjsyrtZQGpCAGxCOjGWK4CPI=
+		F0qWxajQBSh5g2dbTVgdXhVyNLA=
 		</data>
 		<key>MFAOnboardingViewController.nib/runtime.nib</key>
 		<data>
-		5SBvEHqFDiiA2nxNiM6hSOGI0xE=
+		MjWbWRq5JDEPRT7PsehmBBc2xN8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -590,6 +590,10 @@
 		<data>
 		O2AWaE2U4eFA8xXEognsoW4ROSM=
 		</data>
+		<key>connectAnimation.gif</key>
+		<data>
+		o2yPw8cs6/6Cxe91PhIcznYN/oo=
+		</data>
 		<key>loadingAnimation.gif</key>
 		<data>
 		U5EzPXHlHwMxF8GkawOpoNqOweA=
@@ -601,22 +605,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FkDuSr0IgM9jhvVKs5ZS5FMlVEU=
+			hDOxLxnCtWA7Yn8niiLSmo+ha0M=
 			</data>
 			<key>hash2</key>
 			<data>
-			UmWwhzd+Ahg2Lp8QPBkIVbSBvcaUvMTtHCFd9kKtUNg=
+			yNcAqbTzlnmKqxHvv9/axCBRJhSr/hKdUF2z5Ljg3m4=
 			</data>
 		</dict>
 		<key>DapiConnect.momd/DapiConnect.mom</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jwmPQ0y5ua+KRsJPFkLZADGXQ0A=
+			/gQHMZ66QM/7kdVn9siaDjHJPEE=
 			</data>
 			<key>hash2</key>
 			<data>
-			dVtAfFbAo4LyWD0N4+0NAVPukxG1oFW9WLQeHjP8mrI=
+			Ftp8xLYANoCrbKEV+Tzs1XmcIhIy4D9GBuVdR34ujHw=
 			</data>
 		</dict>
 		<key>DapiConnect.momd/VersionInfo.plist</key>
@@ -1224,11 +1228,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nrB6oz9f0OzfmpKYiHw2R5yWLsc=
+			kV9ZfialcpBU9Zq+BFc7YxwrBQM=
 			</data>
 			<key>hash2</key>
 			<data>
-			E7QSiOPGUBRsjaVpFoR+vRQP18GgXKLVsgHWoOW4wcA=
+			HRrLHJsLIiglYPezIGQ3JWwaPGnuDSVipVBtF8hTZhE=
 			</data>
 		</dict>
 		<key>Headers/DPCBalance.h</key>
@@ -1433,11 +1437,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AmnmsAOvaLp+sVWpAntfIDWh6FI=
+			hM2969ijuth92/4z5wv5/1FSd8c=
 			</data>
 			<key>hash2</key>
 			<data>
-			NKPNbien+9NPiEJslhnpk859SVXPlj/IQ0Mwc9qemD0=
+			jcXiaq5QVOraW2bVRGzUZHbRMsek2w11OIpj55I6J40=
 			</data>
 		</dict>
 		<key>Headers/DPCResult.h</key>
@@ -1499,22 +1503,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AfxgjsyrtZQGpCAGxCOjGWK4CPI=
+			F0qWxajQBSh5g2dbTVgdXhVyNLA=
 			</data>
 			<key>hash2</key>
 			<data>
-			omjQfljnACcQD+/2LjScDN92x3n2RrS4K050w6eTaek=
+			0PJYVl1clvatPnbQQnlA2xABuRYMgyk8PvGjWhkhqno=
 			</data>
 		</dict>
 		<key>MFAOnboardingViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5SBvEHqFDiiA2nxNiM6hSOGI0xE=
+			MjWbWRq5JDEPRT7PsehmBBc2xN8=
 			</data>
 			<key>hash2</key>
 			<data>
-			FxHdqZqH8bghE3XpNpqB1/lapbwRTde+EjdNNGXX7Fg=
+			sKeXe5dllK/FYrDeFOknHHUNwogE1yBCh5ECLfE2axM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1702,6 +1706,17 @@
 			<key>hash2</key>
 			<data>
 			sRN5iIvk4/4yGBUsvevstjhJnbm5z7c9devokxtYXrs=
+			</data>
+		</dict>
+		<key>connectAnimation.gif</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			o2yPw8cs6/6Cxe91PhIcznYN/oo=
+			</data>
+			<key>hash2</key>
+			<data>
+			aGiAJtF4Dlofn/9C5aML6UkGICRoHSmbMse8yE9AzzM=
 			</data>
 		</dict>
 		<key>loadingAnimation.gif</key>

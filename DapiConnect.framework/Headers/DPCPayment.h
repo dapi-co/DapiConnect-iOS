@@ -29,9 +29,19 @@ NS_SWIFT_NAME(DapiPayment)
                        completion:(void (^ __nullable)(DPCResult *__nullable result, NSError *__nullable error, JobID *__nullable jobID))completion;
 
 /*!
- @discussion The difference between this method and `-[DPCPayment createTransferWithSenderID:amount:toReceiverID:completion:]` is the it uses iban and name params instead of ReceiverID.
- Some banks don't support create beneficiary endpoint, and they create the beneficiary when making the first payment to a recipient.
-*/
+ @discussion The difference between this method and `-[DPCPayment createTransferWithSenderID:amount:toReceiverID:completion:]` is that it uses different params to transfer money and it's special to banks which don't support Create Beneficiaries.
+ for more, see https://docs.dapi.co/docs/exceptions
+ */
+- (void)createTransferWithSenderID:(NSString *)senderID
+                           amount:(NSNumber *)amount
+           toAccountNumber:(NSString *)accountNumber
+                              name:(NSString *)name
+                       completion:(void (^ __nullable)(DPCResult *__nullable result, NSError *__nullable error, JobID *__nullable jobID))completion;
+
+/*!
+ @discussion The difference between this method and `-[DPCPayment createTransferWithSenderID:amount:toReceiverID:completion:]` is that it uses different params to transfer money and it's special to banks which don't support Create Beneficiaries.
+ for more, see https://docs.dapi.co/docs/exceptions
+ */
 - (void)createTransferWithSenderID:(NSString *)senderID
                            amount:(NSNumber *)amount
                              iban:(NSString *)iban
