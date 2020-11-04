@@ -103,6 +103,8 @@ NS_SWIFT_NAME(DapiConfigurations)
 - (instancetype)initWithAppKey:(NSString *)appKey baseUrl:(NSURLComponents *)baseUrl countries:(NSArray<NSString *> *)countries clientUserID:(NSString *)clientUserID;
 - (instancetype)init __attribute__((unavailable("use [DPCConfigurations initWithAppKey:baseUrl:countries:clientUserID:]")));
 
+- (BOOL)isEqualToConfigurations:(DPCConfigurations *)other;
+
 @end
 
 NS_ASSUME_NONNULL_END
