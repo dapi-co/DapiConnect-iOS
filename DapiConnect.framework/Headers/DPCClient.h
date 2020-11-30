@@ -37,6 +37,11 @@ NS_SWIFT_NAME(DapiClient)
 - (instancetype)initWithConfigurations:(DPCConfigurations *)configurations;
 - (instancetype)init __attribute__((unavailable("use initWithConfigurations:")));
 
+/*!
+ @discussion Removes the client from DapiClient.instances.
+*/
+- (void)dispose;
+
 // MARK: - UI
 
 /*!
