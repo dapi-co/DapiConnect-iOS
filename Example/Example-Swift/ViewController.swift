@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     private lazy var client: DapiClient = {
-        let appKey = "8900eff4837592670c08558c7a6467337b5155145856d693f1e8275455889f7f"//<#T##String#>
+        let appKey = ""//<#T##String#>
 
         var urlComponents = URLComponents()
         urlComponents.scheme = "http"
@@ -77,11 +77,12 @@ extension ViewController: UITableViewDataSource {
 }
 
 extension ViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let connection = client.connect.getConnections()[indexPath.section]
         let account = connection.accounts[indexPath.row]
         
         let getBalanceAction = UIContextualAction.init(style: .normal, title: "Balance", handler: { (action, view, isPerformed) in
+            isPerformed(true)
             self.client.userID = connection.userID!
             self.client.data.getBalanceForAccountID(account.accountID) { (balance, error, jobID) in
                 switch balance {
@@ -95,6 +96,7 @@ extension ViewController: UITableViewDelegate {
         })
         
         let getTransactionsAction = UIContextualAction.init(style: .normal, title: "Transactions", handler: { (action, view, isPerformed) in
+            isPerformed(true)
             let twoDaysAgo = Date().addingTimeInterval(-172800)
             let yesterday = Date().addingTimeInterval(-86400)
             self.client.userID = connection.userID!
@@ -110,6 +112,7 @@ extension ViewController: UITableViewDelegate {
         })
         
         let delinkConnection = UIContextualAction.init(style: .destructive, title: "Delink Connection", handler: { (action, view, isPerformed) in
+            isPerformed(true)
             self.client.userID = connection.userID!
             self.client.auth.delinkUser { (result, error) in
                 if let _ = result {
@@ -161,7 +164,7 @@ extension ViewController: DPCConnectDelegate {
     }
     
     func connectDidProceed(withBankID bankID: String, userID: String) {
-        ///
+        // this will be removed in the future
     }
 }
 
