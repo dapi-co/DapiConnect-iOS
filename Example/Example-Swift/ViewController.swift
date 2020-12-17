@@ -17,18 +17,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     private lazy var client: DapiClient = {
-        let appKey = ""//<#T##String#>
-
-        var urlComponents = URLComponents()
-        urlComponents.scheme = "http"
-        urlComponents.host = "localhost"
-        urlComponents.port = 4561
+        let appKey = <#T##String#>
+        var urlComponents = URLComponents(string: <#T##String#>)! // i.e. http://localhost:4561
         
         let configs = DapiConfigurations(appKey: appKey, baseUrl: urlComponents, countries: ["AE"], clientUserID: "UniqueUserIDForYourApp")
         configs.isAutoTruncate = true
         configs.environment = .sandbox
         configs.colorScheme = .general
         configs.isExperimental = false
+        setCustomFields(for: configs)
         
         let client = DapiClient(configurations: configs)
         
@@ -36,18 +33,37 @@ class ViewController: UIViewController {
         client.autoFlow.connectDelegate = self
         client.autoFlow.autoflowDelegate = self
         
+        client.autoFlow.minimumAmount = 15
+        client.autoFlow.maximumAmount = 1000
+        
         return client
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "AccountCellID")
+    }
+    
+    private func setCustomFields(for configs: DapiConfigurations) {
+        configs.endPointExtraBody = [
+            DPCEndPoint.getBalance: ["time": Date()]
+        ]
         
+        configs.endPointExtraQueryItems = [
+            DPCEndPoint.getIdentity: [URLQueryItem.init(name: "user", value: "johndoe")]
+        ]
+        
+        configs.endPointExtraHeaderFields = [
+            DPCEndPoint.getBalance: ["device": "iPhone 12 Pro"]
+        ]
     }
     
     @IBAction func didTapAddButton(_ sender: UIBarButtonItem) {
         client.connect.present()
+    }
+    
+    @IBAction func didTapAutoFlowButton(_ sender: UIBarButtonItem) {
+        client.autoFlow.present()
     }
 }
 

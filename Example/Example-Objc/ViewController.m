@@ -30,25 +30,50 @@
 }
 
 - (void)setupClient {
-    NSString *appKey = @"8900eff4837592670c08558c7a6467337b5155145856d693f1e8275455889f7f";
-    NSURLComponents *urlComponents = [[NSURLComponents alloc] initWithString:@"http://localhost:4561"];
+    NSString *appKey = <#T##NSString#>;
+    NSURLComponents *urlComponents = [[NSURLComponents alloc] initWithString:<#T##NSString#>]; // i.e. http://localhost:4561
+    
     DPCConfigurations *configs = [[DPCConfigurations alloc] initWithAppKey:appKey baseUrl:urlComponents countries:@[@"AE"] clientUserID:@"UniqueUserIDForYourApp"];
     configs.autoTruncate = YES;
     configs.environment = DPCAppEnvironmentSandbox;
     configs.colorScheme = DPCColorSchemeGeneral;
     configs.isExperimental = NO;
+    [self setCustomFieldsForConfigs:configs];
     
     DPCClient *client = [[DPCClient alloc] initWithConfigurations:configs];
     client.connect.delegate = self;
     client.autoFlow.connectDelegate = self;
     client.autoFlow.autoflowDelegate = self;
+    
+    client.autoFlow.minimumAmount = 15;
+    client.autoFlow.maximumAmount = 1000;
+    
     self.client = client;
     /// Or you can access client by using `DPCClient.instances`
+}
+
+- (void)setCustomFieldsForConfigs:(DPCConfigurations *)configs {
+    configs.endPointExtraBody = @{
+        DPCEndPointGetBalance: @{@"time": [NSDate date]}
+    };
+    
+    configs.endPointExtraQueryItems = @{
+        DPCEndPointGetIdentity: @[[NSURLQueryItem queryItemWithName:@"user" value:@"johndoe"]]
+    };
+    
+    configs.endPointExtraHeaderFields = @{
+        DPCEndPointGetBalance: @{@"device": @"iPhone 12 Pro"}
+    };
 }
 
 
 - (IBAction)didTapAddButton:(UIBarButtonItem *)sender {
     [self.client.connect present];
+}
+
+
+- (IBAction)didTapAutoFlowButton:(UIBarButtonItem *)sender {
+    [self.client.autoFlow present];
 }
 
 // MARK:- UITableViewDataSource
