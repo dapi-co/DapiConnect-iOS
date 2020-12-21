@@ -14,12 +14,12 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(DapiConnectionDetails)
 @interface DPCConnectionDetails : NSObject
 
-@property (nullable, nonatomic, copy) NSString *userID;
-@property (nullable, nonatomic, copy) NSString *clientUserID;
-@property (nullable, nonatomic, copy) NSString *bankID;
-@property (nullable, nonatomic, copy) NSString *bankName;
+@property (nonnull, nonatomic, copy) NSString *userID;
+@property (nonnull, nonatomic, copy) NSString *clientUserID;
+@property (nonnull, nonatomic, copy) NSString *bankID;
+@property (nonnull, nonatomic, copy) NSString *bankName;
 @property (assign) double beneficiaryCoolDownPeriod;
-@property (nullable, nonatomic, copy) NSString *countryName;
+@property (nonnull, nonatomic, copy) NSString *countryName;
 @property (assign) BOOL isCreateBeneficiaryEndpointRequired;
 @property (nonatomic, copy) NSArray<DPCAccount *> *accounts;
 
