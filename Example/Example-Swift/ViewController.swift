@@ -185,6 +185,7 @@ extension ViewController: DapiConnectDelegate {
 }
 
 extension ViewController: DapiAutoFlowDelegate {
+    
     func autoFlow(_ autoFlow: DapiAutoFlow, beneficiaryInfoForBankWithID bankID: String, beneficiaryInfo info: @escaping (DapiBeneficiaryInfo?) -> Void) {
         let beneficiaryInfo = DapiBeneficiaryInfo()
         let lineAddress = DapiLinesAddress()
@@ -204,11 +205,15 @@ extension ViewController: DapiAutoFlowDelegate {
         info(beneficiaryInfo)
     }
     
-    func autoFlow(_ autoFlow: DapiAutoFlow, didSuccessfullyTransferAmount amount: Double, fromAccount senderAccountID: String, toAccuntID recipientAccountID: String) {
+    func autoFlow(_ autoFlow: DapiAutoFlow, willTransferAmount amount: UInt, from senderAccount: DapiAccount) {
         
     }
     
-    func autoFlow(_ autoFlow: DapiAutoFlow, didFailToTransferFromAccount senderAccountID: String, toAccuntID recipientAccountID: String?, withError error: Error) {
+    func autoFlow(_ autoFlow: DapiAutoFlow, didSuccessfullyTransferAmount amount: UInt, from senderAccount: DapiAccount, toAccuntID recipientAccountID: String) {
+        
+    }
+    
+    func autoFlow(_ autoFlow: DapiAutoFlow, didFailToTransferFrom senderAccount: DapiAccount, toAccuntID recipientAccountID: String, withError error: Error) {
         
     }
 }

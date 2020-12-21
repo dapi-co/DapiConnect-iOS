@@ -184,11 +184,15 @@
 
 }
 
-- (void)autoFlow:(nonnull DPCAutoFlow *)autoFlow didFailToTransferFromAccount:(nonnull NSString *)senderAccountID toAccuntID:(NSString * _Nullable)recipientAccountID withError:(nonnull NSError *)error {
+- (void)autoFlow:(nonnull DPCAutoFlow *)autoFlow willTransferAmount:(NSUInteger)amount fromAccount:(nonnull DPCAccount *)senderAccount {
     
 }
 
-- (void)autoFlow:(nonnull DPCAutoFlow *)autoFlow didSuccessfullyTransferAmount:(double)amount fromAccount:(nonnull NSString *)senderAccountID toAccuntID:(nonnull NSString *)recipientAccountID {
+- (void)autoFlow:(DPCAutoFlow *)autoFlow didSuccessfullyTransferAmount:(NSUInteger)amount fromAccount:(DPCAccount *)senderAccount toAccuntID:(NSString *)recipientAccountID {
+    
+}
+
+- (void)autoFlow:(nonnull DPCAutoFlow *)autoFlow didFailToTransferFromAccount:(nonnull DPCAccount *)senderAccount toAccuntID:(NSString * _Nonnull)recipientAccountID withError:(nonnull NSError *)error {
     
 }
 

@@ -23,19 +23,25 @@ NS_SWIFT_NAME(DapiAutoFlowDelegate)
 /// @param info The beneficiary info callback.
 - (void)autoFlow:(DPCAutoFlow *)autoFlow beneficiaryInfoForBankWithID:(NSString *)bankID beneficiaryInfo:(void (^)(DPCBeneficiaryInfo *_Nullable beneficiaryInfo))info;
 
+/// Called before a transfer request is executed.
+/// @param autoFlow The AutoFlow object initiated the call.
+/// @param amount The amount  to be transacted.
+/// @param senderAccount The account will initiate transfer request.
+- (void)autoFlow:(DPCAutoFlow *)autoFlow willTransferAmount:(NSUInteger)amount fromAccount:(DPCAccount *)senderAccount;
+
 /// Called after a succesful transfer.
 /// @param autoFlow The AutoFlow object initiated the call.
 /// @param amount The transacted amount.
-/// @param senderAccountID Sender account ID.
+/// @param senderAccount The account initiated transfer request.
 /// @param recipientAccountID Receiver account ID.
-- (void)autoFlow:(DPCAutoFlow *)autoFlow didSuccessfullyTransferAmount:(double)amount fromAccount:(NSString *)senderAccountID toAccuntID:(NSString *)recipientAccountID;
+- (void)autoFlow:(DPCAutoFlow *)autoFlow didSuccessfullyTransferAmount:(NSUInteger)amount fromAccount:(DPCAccount *)senderAccount toAccuntID:(NSString * _Nonnull)recipientAccountID;
 
 /// Called after a failed transfer.
 /// @param autoFlow The AutoFlow object initiated the call.
-/// @param senderAccountID Sender account ID
-/// @param recipientAccountID Receiver account ID
+/// @param senderAccount The account initiated transfer request.
+/// @param recipientAccountID Receiver account ID.
 /// @param error The reason why a transfer failed.
-- (void)autoFlow:(DPCAutoFlow *)autoFlow didFailToTransferFromAccount:(NSString *)senderAccountID toAccuntID:(NSString * _Nullable)recipientAccountID withError:(NSError *)error;
+- (void)autoFlow:(DPCAutoFlow *)autoFlow didFailToTransferFromAccount:(DPCAccount *)senderAccount toAccuntID:(NSString * _Nonnull)recipientAccountID withError:(NSError *)error;
 
 @end
 
