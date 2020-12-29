@@ -30,8 +30,8 @@
 }
 
 - (void)setupClient {
-    NSString *appKey = <#T##NSString#>;
-    NSURLComponents *urlComponents = [[NSURLComponents alloc] initWithString:<#T##NSString#>]; // i.e. http://localhost:4561
+    NSString *appKey = @"<#T##NSString#>";
+    NSURLComponents *urlComponents = [[NSURLComponents alloc] initWithString:@"<#T##NSString#>"]; // i.e. http://localhost:4561
     
     DPCConfigurations *configs = [[DPCConfigurations alloc] initWithAppKey:appKey baseUrl:urlComponents countries:@[@"AE"] clientUserID:@"UniqueUserIDForYourApp"];
     configs.autoTruncate = YES;
@@ -111,7 +111,7 @@
     UIContextualAction *balanceAction = [UIContextualAction contextualActionWithStyle:(UIContextualActionStyleNormal) title:@"Balance" handler:^(UIContextualAction * _Nonnull action, __kindof UIView * _Nonnull sourceView, void (^ _Nonnull completionHandler)(BOOL)) {
         completionHandler(YES);
         
-        self.client.userID = connection.userID;
+        self.client.connection = connection;
         [self.client.data getBalanceForAccountID:account.accountID completion:^(DPCBalance * _Nullable balance, NSError * _Nullable error, NSString * _Nullable jobID) {
             NSLog(@"%@", balance.amount.stringValue);
             if (error) {
@@ -146,13 +146,13 @@
     [self showAlertWithTitle:errorTitle message:error];
 }
 
-
-- (void)connectDidSuccessfullyConnectToBankID:(nonnull NSString *)bankID userID:(nonnull NSString *)userID {
-    /// We're connected to the bank, we need to fetch the subaccount for that connection now.
+- (void)connectDidSuccessfullyConnectToBankID:(NSString *)bankID connection:(DPCConnectionDetails *)connection {
     [self.tableView reloadData];
     
+    /// We're connected to the bank, we need to fetch the subaccount for that connection now.
+    self.client.connection = connection;
+    
     /// Calling APIs from client automatically stores the data for you in `[client.connect getConnections]`
-    self.client.userID = userID;
     [self.client.data getAccounts:^(NSArray<DPCAccount *> * _Nullable accounts, NSError * _Nullable error, NSString * _Nullable jobID) {
         [self.tableView reloadData];
     }];

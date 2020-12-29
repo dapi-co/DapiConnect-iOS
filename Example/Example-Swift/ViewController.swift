@@ -17,8 +17,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     private lazy var client: DapiClient = {
-        let appKey = <#T##String#>
-        var urlComponents = URLComponents(string: <#T##String#>)! // i.e. http://localhost:4561
+        let appKey = "<#T##String#>"
+        var urlComponents = URLComponents(string: "<#T##String#>")! // i.e. http://localhost:4561
         
         let configs = DapiConfigurations(appKey: appKey, baseUrl: urlComponents, countries: ["AE"], clientUserID: "UniqueUserIDForYourApp")
         configs.isAutoTruncate = true
@@ -99,7 +99,7 @@ extension ViewController: UITableViewDelegate {
         
         let getBalanceAction = UIContextualAction.init(style: .normal, title: "Balance", handler: { (action, view, isPerformed) in
             isPerformed(true)
-            self.client.userID = connection.userID
+            self.client.connection = connection
             self.client.data.getBalanceForAccountID(account.accountID) { (balance, error, jobID) in
                 switch balance {
                 case .some(let balance):
@@ -115,7 +115,7 @@ extension ViewController: UITableViewDelegate {
             isPerformed(true)
             let twoDaysAgo = Date().addingTimeInterval(-172800)
             let yesterday = Date().addingTimeInterval(-86400)
-            self.client.userID = connection.userID
+            self.client.connection = connection
             self.client.data.getTransactionsForAccountID(account.accountID, from: twoDaysAgo, to: yesterday) { (transactions, error, jobID) in
                 switch transactions {
                 case .some(let transactions):
@@ -129,7 +129,7 @@ extension ViewController: UITableViewDelegate {
         
         let delinkConnection = UIContextualAction.init(style: .destructive, title: "Delink Connection", handler: { (action, view, isPerformed) in
             isPerformed(true)
-            self.client.userID = connection.userID
+            self.client.connection = connection
             self.client.auth.delinkUser { (result, error) in
                 if let _ = result {
                     self.tableView.reloadData()
@@ -148,13 +148,12 @@ extension ViewController: UITableViewDelegate {
 }
 
 extension ViewController: DapiConnectDelegate {
-    
-    func connectDidSuccessfullyConnect(toBankID bankID: String, userID: String) {
-        /// We're connected to the bank, we need to fetch the subaccount for that connection now.
+    func connectDidSuccessfullyConnect(toBankID bankID: String, connection: DapiConnectionDetails) {
         tableView.reloadData()
+        /// We're connected to the bank, we need to fetch the subaccount for that connection now.
+        client.connection = connection
         
         /// Calling APIs from client automatically stores the data for you in `client.connect.getConnections()`
-        client.userID = userID
         client.data.getAccounts { (accounts, error, jobID) in
             self.tableView.reloadData()
         }

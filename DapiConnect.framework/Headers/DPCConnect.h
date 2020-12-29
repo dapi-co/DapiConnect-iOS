@@ -32,8 +32,9 @@ NS_SWIFT_NAME(DapiConnectDelegate)
 
 /// Called when a connection to a bank is successful. But after calling all the required APIs.
 /// @param bankID The bankID the user connected to.
-/// @param userID The userID that will be used on DapiClient object to call APIs upon.
-- (void)connectDidSuccessfullyConnectToBankID:(NSString *)bankID userID:(NSString *)userID;
+/// @param connection A connection to a bank that will be used on DapiClient object to call APIs upon. The connection will include details about the bank.
+/// @discussion Since it's a recent login, accounts in connection will be empty at this stage.
+- (void)connectDidSuccessfullyConnectToBankID:(NSString *)bankID connection:(DPCConnectionDetails *)connection;
 
 /// Called when a connection to a bank is failed.
 /// @param bankID The bankID the user tried connecting to.

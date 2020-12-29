@@ -20,10 +20,6 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(DapiClient)
 @interface DPCClient : NSObject
 
-
-/// Most recently created instance.
-@property (class, nonatomic, strong, readonly) DPCClient *instance;
-
 /// All created instances.
 @property (class, nonatomic, copy, readonly) NSArray<DPCClient *> *instances;
 
@@ -31,9 +27,9 @@ NS_SWIFT_NAME(DapiClient)
 /// @discussion Let's you control the appKey, environment, base URL and set custom end points, etc.
 @property (nonatomic, strong) DPCConfigurations *configurations;
 
-/// Dapi's userID.
-/// @discussion a userID represents a single connection to a bank, and it differs between banks. For example, when a user connects their account to bank A and bank B, you will have 2 userIDs. Later, when you call any API, it will be called on this userID.
-@property (nonatomic, copy) NSString *userID;
+/// A connection to a bank..
+/// @discussion a connection is a login to a bank, and the value different between banks. For example, when a user login to their bank A and bank B, you will have 2 connections. Each connection has details about the bank, how many accounts they have, etc.
+@property (nonatomic, strong) DPCConnectionDetails *connection;
 
 - (instancetype)initWithConfigurations:(DPCConfigurations *)configurations;
 - (instancetype)init __attribute__((unavailable("use initWithConfigurations:")));
