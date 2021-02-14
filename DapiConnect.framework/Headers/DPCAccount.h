@@ -20,6 +20,7 @@ NS_SWIFT_NAME(DapiAccount)
 @property (nonatomic, strong) NSString *type;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *accountID;
+@property (nonatomic, assign) double balance;
 @property (nonatomic, assign) BOOL isFavourite;
 
 - (instancetype)initWithDictionary:(NSDictionary<NSString *, id> *)dictionary;

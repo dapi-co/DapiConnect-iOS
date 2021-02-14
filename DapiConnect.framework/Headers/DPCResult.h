@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(DapiResult)
 @interface DPCResult : NSObject
 
-@property (nonatomic, copy) NSString *jobID;
+@property (nonatomic, copy) NSString *operationID;
 @property (nonatomic, copy) NSString *status;
 @property (nonatomic, assign) BOOL success;
 @property (nonatomic, copy) NSString *message;

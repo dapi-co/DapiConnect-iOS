@@ -10,11 +10,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NSString *DPCAppEnvironment NS_TYPED_EXTENSIBLE_ENUM;
-
-extern DPCAppEnvironment const DPCAppEnvironmentProduction;
-extern DPCAppEnvironment const DPCAppEnvironmentSandbox;
-
 typedef NSString *DPCEndPoint NS_TYPED_EXTENSIBLE_ENUM;
 
 extern DPCEndPoint const DPCEndPointExchangeToken;
@@ -62,13 +57,6 @@ NS_SWIFT_NAME(DapiConfigurations)
  All fetched data will be associated with this property
 */
 @property (nonatomic, copy) NSString *clientUserID;
-
-/*!
- @brief The environment your Dapi app on the dashboard is using.
- 
- @discussion Make sure to switch to production before releasing to the App Store.
-*/
-@property (nonatomic, copy) DPCAppEnvironment environment;
 
 /*!
  @brief Let's you set a custom end point. This only needed when not using the server-side SDK.
