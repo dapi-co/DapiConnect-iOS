@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|  
     s.name              = 'DapiSDK'
-    s.version           = '2.0.0'
+    s.version           = '2.0.1'
     s.summary           = 'Financial APIs to connect users bank accounts.'
     s.homepage          = 'https://dapi.co/'
     s.author            = { 'Dapi' => 'hello@dapi.co' }
