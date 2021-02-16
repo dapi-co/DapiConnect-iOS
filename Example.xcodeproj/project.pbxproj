@@ -13,8 +13,6 @@
 		04F723B725863F410022B816 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F723B525863F410022B816 /* Main.storyboard */; };
 		04F723B925863F420022B816 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F723B825863F420022B816 /* Assets.xcassets */; };
 		04F723BC25863F420022B816 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F723BA25863F420022B816 /* LaunchScreen.storyboard */; };
-		04F723C1258643C30022B816 /* DapiConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0465D34425863B960030182C /* DapiConnect.framework */; };
-		04F723C2258643C30022B816 /* DapiConnect.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0465D34425863B960030182C /* DapiConnect.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		04F723CC258654780022B816 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F723CB258654780022B816 /* AppDelegate.m */; };
 		04F723CF258654780022B816 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F723CE258654780022B816 /* SceneDelegate.m */; };
 		04F723D2258654780022B816 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F723D1258654780022B816 /* ViewController.m */; };
@@ -23,8 +21,10 @@
 		04F723DA258654790022B816 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F723D8258654790022B816 /* LaunchScreen.storyboard */; };
 		04F723DD258654790022B816 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F723DC258654790022B816 /* main.m */; };
 		04F723E12586548D0022B816 /* Example-Swift.app in Resources */ = {isa = PBXBuildFile; fileRef = 04F723AD25863F410022B816 /* Example-Swift.app */; };
-		04F723E42586549F0022B816 /* DapiConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0465D34425863B960030182C /* DapiConnect.framework */; };
-		04F723E52586549F0022B816 /* DapiConnect.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0465D34425863B960030182C /* DapiConnect.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		50D6881625DBF8DB007ACA03 /* DapiConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D6881525DBF8DB007ACA03 /* DapiConnect.framework */; };
+		50D6881725DBF8DB007ACA03 /* DapiConnect.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 50D6881525DBF8DB007ACA03 /* DapiConnect.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		50D6881925DBF8E4007ACA03 /* DapiConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D6881525DBF8DB007ACA03 /* DapiConnect.framework */; };
+		50D6881A25DBF8E4007ACA03 /* DapiConnect.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 50D6881525DBF8DB007ACA03 /* DapiConnect.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,24 +38,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		04F723C3258643C30022B816 /* Embed Frameworks */ = {
+		50D6881825DBF8DB007ACA03 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				04F723C2258643C30022B816 /* DapiConnect.framework in Embed Frameworks */,
+				50D6881725DBF8DB007ACA03 /* DapiConnect.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		04F723E62586549F0022B816 /* Embed Frameworks */ = {
+		50D6881B25DBF8E4007ACA03 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				04F723E52586549F0022B816 /* DapiConnect.framework in Embed Frameworks */,
+				50D6881A25DBF8E4007ACA03 /* DapiConnect.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,6 +84,7 @@
 		04F723D9258654790022B816 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04F723DB258654790022B816 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04F723DC258654790022B816 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		50D6881525DBF8DB007ACA03 /* DapiConnect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DapiConnect.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04F723C1258643C30022B816 /* DapiConnect.framework in Frameworks */,
+				50D6881625DBF8DB007ACA03 /* DapiConnect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04F723E42586549F0022B816 /* DapiConnect.framework in Frameworks */,
+				50D6881925DBF8E4007ACA03 /* DapiConnect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +129,7 @@
 		0465D34325863B960030182C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				50D6881525DBF8DB007ACA03 /* DapiConnect.framework */,
 				0465D34425863B960030182C /* DapiConnect.framework */,
 			);
 			name = Frameworks;
@@ -175,7 +177,7 @@
 				04F723A925863F410022B816 /* Sources */,
 				04F723AA25863F410022B816 /* Frameworks */,
 				04F723AB25863F410022B816 /* Resources */,
-				04F723C3258643C30022B816 /* Embed Frameworks */,
+				50D6881825DBF8DB007ACA03 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -193,7 +195,7 @@
 				04F723C4258654780022B816 /* Sources */,
 				04F723C5258654780022B816 /* Frameworks */,
 				04F723C6258654780022B816 /* Resources */,
-				04F723E62586549F0022B816 /* Embed Frameworks */,
+				50D6881B25DBF8E4007ACA03 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
