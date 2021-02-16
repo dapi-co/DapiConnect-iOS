@@ -1,14 +1,3 @@
-///
-/// ⚠️ Good to know
-/// Before running the example, make sure you:
-/// 1. Add your IP address to dashboard.dapi.co
-/// 2. While in sandbox, use these credentials in any of the banks
-/// - `dapi_user1` `dapi_password1`
-/// - `dapi_user2` `dapi_password2`
-/// Make sure you're running the SDK Server: https://docs.dapi.co/docs/sdk-server (this will be removed in the future)
-///
-///
-
 #import "ViewController.h"
 #import <DapiConnect/DapiConnect.h>
 

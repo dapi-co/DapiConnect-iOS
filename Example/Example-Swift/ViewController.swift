@@ -1,14 +1,3 @@
-///
-/// ⚠️ Good to know
-/// Before running the example, make sure you:
-/// 1. Add your IP address to dashboard.dapi.co
-/// 2. While in sandbox, use these credentials in any of the banks
-/// - `dapi_user1` `dapi_password1`
-/// - `dapi_user2` `dapi_password2`
-/// Make sure you're running the SDK Server: https://docs.dapi.co/docs/sdk-server (this will be removed in the future)
-///
-///
-
 import UIKit
 import DapiConnect
 
@@ -26,22 +15,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func didTapTransferButton(_ sender: UIBarButtonItem) {
-        //let beneficiaryInfo = DapiBeneficiaryInfo()
-        //let lineAddress = DapiLinesAddress()
-        //lineAddress.line1 = "baniyas road"
-        //lineAddress.line2 = "dubai"
-        //lineAddress.line3 = "united arab emirates"
-        //beneficiaryInfo.linesAddress =  lineAddress
-        //beneficiaryInfo.accountNumber = "123456789"
-        //beneficiaryInfo.bankName = "Emirates NBD Bank PJSC"
-        //beneficiaryInfo.swiftCode = "EBILAEAD"
-        //beneficiaryInfo.iban = "AE123456789"
-        //beneficiaryInfo.country = "UNITED ARAB EMIRATES"
-        //beneficiaryInfo.branchAddress = "Baniyas Road Deira PO Box 777 Dubai UAE"
-        //beneficiaryInfo.branchName = "Emirates NBD Bank PJSC"
-        //beneficiaryInfo.phoneNumber = "0123456789"
-        //beneficiaryInfo.name = "John Doe"
-        //info(beneficiaryInfo)
+        if let connection = Dapi.shared.getConnections().first {
+            self.pay(amount: 0, using: connection, account: nil)
+        }
     }
 }
 
@@ -107,6 +83,8 @@ extension ViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        let connection = Dapi.shared.getConnections()[indexPath.section]
+        self.pay(amount: 0, using: connection, account: connection.accounts[indexPath.row])
     }
 }
 
@@ -134,5 +112,27 @@ extension ViewController {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default))
         present(alert, animated: true)
+    }
+    
+    func pay(amount: UInt, using connection: DapiBankConnection, account: DapiAccount?) {
+        let beneficiary = DapiBeneficiary()
+        let lineAddress = DapiLinesAddress()
+        lineAddress.line1 = "baniyas road"
+        lineAddress.line2 = "dubai"
+        lineAddress.line3 = "united arab emirates"
+        beneficiary.linesAddress =  lineAddress
+        beneficiary.accountNumber = "123456789"
+        beneficiary.bankName = "Emirates NBD Bank PJSC"
+        beneficiary.swiftCode = "EBILAEAD"
+        beneficiary.iban = "AE123456789"
+        beneficiary.country = "UNITED ARAB EMIRATES"
+        beneficiary.branchAddress = "Baniyas Road Deira PO Box 777 Dubai UAE"
+        beneficiary.branchName = "Emirates NBD Bank PJSC"
+        beneficiary.phoneNumber = "0123456789"
+        beneficiary.name = "John Doe"
+        
+        connection.createTransfer(from: account, to: beneficiary, amount: amount) { (account, amount, error, operationID) in
+            print(account)
+        }
     }
 }
